@@ -31,6 +31,11 @@ Public Class Conexion
         _transaccion.Rollback()
 
     End Sub
+
+    Public Sub cerrarConexion()
+        _conexion.Close()
+
+    End Sub
 End Class
 
 

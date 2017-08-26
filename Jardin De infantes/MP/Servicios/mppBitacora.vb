@@ -29,4 +29,8 @@ Public Class mppBitacora
 
         Return ht
     End Function
+
+    Public Overrides Function listar(dt As DataTable) As List(Of Bitacora)
+        Throw New NotImplementedException()
+    End Function
 End Class

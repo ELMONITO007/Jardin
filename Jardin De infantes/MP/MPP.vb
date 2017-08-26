@@ -4,5 +4,5 @@
     Public MustOverride Function Modificar(unObjeto As T) As Hashtable
     Public MustOverride Function Eliminar(ID As Integer) As Hashtable
     Public MustOverride Function Buscar(ID As Integer) As Hashtable
-
+    Public MustOverride Function listar(dt As DataTable) As List(Of T)
 End Class

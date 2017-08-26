@@ -23,10 +23,11 @@
             Dim cmd As IDbCommand = db.CrearComando
             cmd.CommandType = CommandType.StoredProcedure
             cmd.CommandText = "AgregarBitacora"
+            db.RealizarCommit()
 
 
         Catch ex As Exception
-
+            db.RealizarRollBack()
         End Try
 
 
