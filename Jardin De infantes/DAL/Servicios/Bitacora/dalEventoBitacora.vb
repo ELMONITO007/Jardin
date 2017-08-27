@@ -1,6 +1,12 @@
 ﻿Imports System.Data.SqlClient
+Imports DAL
+Imports EE
+Imports MP
+
 Public Class dalEventoBitacora
-    Inherits DAL
+    Inherits DAL(Of EventoBitacora)
+
+
     Private db As Conexion
     Private _cmd As IDbCommand
 
@@ -10,27 +16,25 @@ Public Class dalEventoBitacora
 
     End Sub
 
-
-
-    Public Overrides Sub Modificar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Modificar(HT As Hashtable)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Sub Eliminar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Sub Agregar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Function Buscar(ID As Integer) As DataTable
+    Public Overrides Function IdatosCompleto_Buscar(ID As Integer) As DataTable
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function Listar() As DataTable
-
+    Public Overrides Function IdatosCompleto_Listar() As List(Of EventoBitacora)
         Try
+            Dim listaEventos As New List(Of EventoBitacora)
             Dim cmd As IDbCommand = db.CrearComando
             cmd.CommandType = CommandType.StoredProcedure
             cmd.CommandText = "p_VerEventoBitacora"
@@ -39,13 +43,20 @@ Public Class dalEventoBitacora
             Dim dt As New DataTable
             da.Fill(dt)
             db.RealizarCommit()
-            db.cerrarConexion()
-            Return dt
+
+            Dim mapear As New mppEventoBitacora
+            listaEventos = mapear.listar(dt)
+            Return listaEventos
 
         Catch ex As Exception
             db.RealizarRollBack()
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error al ver la bitacora")
             Return Nothing
         End Try
+        db.cerrarConexion()
     End Function
+
+
+
+
 End Class

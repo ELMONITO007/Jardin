@@ -10,13 +10,17 @@ Public Class Conexion
     Public Sub New()
         _conexion = New SqlConnection(ConfigurationManager.ConnectionStrings("Notebook").ConnectionString)
         _conexion.Open()
+
         _transaccion = _conexion.BeginTransaction()
 
 
     End Sub
-
+    Public Sub abrirconexion()
+        _conexion.Open()
+    End Sub
     Public Function CrearComando() As IDbCommand
         Dim cmd As New SqlCommand
+        cmd = _conexion.CreateCommand
         cmd.Transaction = _transaccion
         Return cmd
 
@@ -28,7 +32,7 @@ Public Class Conexion
     End Sub
 
     Public Sub RealizarRollBack()
-        _transaccion.Rollback()
+        '_transaccion.Rollback()
 
     End Sub
 

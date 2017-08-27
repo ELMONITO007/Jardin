@@ -1,0 +1,9 @@
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\bin\Debug\EE.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\bin\Debug\EE.pdb
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\bin\Debug\EE.xml
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\Debug\EE.vbprojResolveAssemblyReference.cache
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\Debug\EE.Resources.resources
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\Debug\EE.vbproj.GenerateResource.Cache
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\Debug\EE.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\Debug\EE.xml
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\Debug\EE.pdb

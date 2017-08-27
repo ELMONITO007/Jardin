@@ -22,9 +22,42 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.dgv = New System.Windows.Forms.DataGridView()
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(118, 184)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'dgv
+        '
+        Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv.Location = New System.Drawing.Point(33, 12)
+        Me.dgv.Name = "dgv"
+        Me.dgv.Size = New System.Drawing.Size(240, 150)
+        Me.dgv.TabIndex = 1
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(341, 282)
+        Me.Controls.Add(Me.dgv)
+        Me.Controls.Add(Me.Button1)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents Button1 As Button
+    Friend WithEvents dgv As DataGridView
 End Class

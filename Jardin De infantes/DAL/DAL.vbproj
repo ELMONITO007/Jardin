@@ -105,5 +105,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EE\EE.vbproj">
+      <Project>{66d4dc2d-e738-450f-8836-684ae527743f}</Project>
+      <Name>EE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MP\MP.vbproj">
+      <Project>{495c0b5e-420e-4387-b909-a9e6f3bab771}</Project>
+      <Name>MP</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

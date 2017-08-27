@@ -19,6 +19,21 @@ Public Class mppEventoBitacora
     End Function
 
     Public Overrides Function listar(dt As DataTable) As List(Of EventoBitacora)
-        Throw New NotImplementedException()
+        Dim listaEventosBitacora As New List(Of EventoBitacora)
+        For Each item As DataRow In dt.Rows
+            Dim ID As String = CStr(item("ID_Evento"))
+            Dim evento As String = CStr(item("Evento"))
+            Dim unevento As New EventoBitacora(evento, CInt(ID))
+
+            listaEventosBitacora.Add(unevento)
+
+        Next
+        Return listaEventosBitacora
     End Function
+
+
+
+
+
+
 End Class
