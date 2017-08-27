@@ -78,6 +78,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Persona\Persona.vb" />
     <Compile Include="Servicios\Bitacora\Bitacora.vb" />
     <Compile Include="Servicios\Bitacora\EventoBitacora.vb" />
     <Compile Include="Servicios\Digito Verificador\DigitoVerificadorH.vb" />
@@ -85,6 +86,7 @@
     <Compile Include="Servicios\Encriptado\eeEncriptado.vb" />
     <Compile Include="Servicios\Encriptado\EncriptarSHA256.vb" />
     <Compile Include="Servicios\Encriptado\EncriptarSHA5.vb" />
+    <Compile Include="Servicios\Gestion usuario\Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -5,7 +5,7 @@ Public Class Form1
         Dim eventos As New bllEventoBitacora
         Dim ListaEventos As New List(Of EventoBitacora)
         ListaEventos = eventos.ListarEventos()
-
+        dgv.DataSource = ListaEventos
 
 
 

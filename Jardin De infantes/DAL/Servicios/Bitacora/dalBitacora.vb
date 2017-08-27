@@ -1,7 +1,7 @@
-﻿Imports DAL
+﻿Imports EE
 
-Public Class dalBitacora(Of dalEventoBitacora)
-    Inherits DAL(Of dalEventoBitacora)
+Public Class dalBitacora(Of bitacora)
+    Inherits DAL(Of bitacora)
 
     Private db As Conexion
     Private _cmd As IDbCommand
@@ -28,18 +28,7 @@ Public Class dalBitacora(Of dalEventoBitacora)
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function IdatosCompleto_Listar() As List(Of dalEventoBitacora)
-        'Try
-
-        '    Dim cmd As IDbCommand = db.CrearComando
-        '    cmd.CommandType = CommandType.StoredProcedure
-        '    cmd.CommandText = "AgregarBitacora"
-        '    db.RealizarCommit()
-
-
-        'Catch ex As Exception
-        '    db.RealizarRollBack()
-        'End Try
-        Return Nothing
+    Public Overrides Function IdatosCompleto_Listar() As List(Of bitacora)
+        Throw New NotImplementedException()
     End Function
 End Class
