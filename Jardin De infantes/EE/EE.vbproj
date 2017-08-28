@@ -78,7 +78,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Servicios\Idioma\Idioma.vb" />
+    <Compile Include="Servicios\Idioma\Palabra.vb" />
     <Compile Include="Persona\Persona.vb" />
+    <Compile Include="Persona\PersonalNoDocente.vb" />
     <Compile Include="Servicios\Bitacora\Bitacora.vb" />
     <Compile Include="Servicios\Bitacora\EventoBitacora.vb" />
     <Compile Include="Servicios\Digito Verificador\DigitoVerificadorH.vb" />
@@ -87,6 +90,7 @@
     <Compile Include="Servicios\Encriptado\EncriptarSHA256.vb" />
     <Compile Include="Servicios\Encriptado\EncriptarSHA5.vb" />
     <Compile Include="Servicios\Gestion usuario\Usuario.vb" />
+    <Compile Include="Servicios\Idioma\Traduccion.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

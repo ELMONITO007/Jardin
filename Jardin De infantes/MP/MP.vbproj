@@ -81,6 +81,7 @@
     </Compile>
     <Compile Include="Servicios\mppBitacora.vb" />
     <Compile Include="Servicios\mppEventoBitacora.vb" />
+    <Compile Include="Servicios\mppUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
