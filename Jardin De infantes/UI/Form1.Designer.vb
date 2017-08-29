@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,11 +45,20 @@ Partial Class Form1
         Me.dgv.Size = New System.Drawing.Size(240, 150)
         Me.dgv.TabIndex = 1
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(33, 224)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 2
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(341, 282)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.dgv)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
@@ -60,4 +70,5 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents dgv As DataGridView
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

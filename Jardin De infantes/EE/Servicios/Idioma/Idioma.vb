@@ -6,4 +6,7 @@
 
     End Sub
 
+    Function getIdioma() As String
+        Return idioma
+    End Function
 End Class

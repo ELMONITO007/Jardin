@@ -35,9 +35,9 @@ Public Class mppBitacora
         For Each item As DataRow In dt.Rows
             Dim ID As String = CStr(item("ID_Evento"))
             Dim evento As String = CStr(item("Evento"))
-            Dim unevento As New Bitacora(evento, CInt(ID))
+            'Dim unevento As New Bitacora(evento, CInt(ID))
 
-            listaBitacora.Add(unevento)
+            'listaBitacora.Add(unevento)
 
         Next
         Return listaBitacora

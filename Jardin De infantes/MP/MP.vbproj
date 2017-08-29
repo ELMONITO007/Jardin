@@ -79,8 +79,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Servicios\mppBitacora.vb" />
-    <Compile Include="Servicios\mppEventoBitacora.vb" />
+    <Compile Include="Servicios\Bitacora\mppBitacora.vb" />
+    <Compile Include="Servicios\Bitacora\mppEventoBitacora.vb" />
+    <Compile Include="Servicios\Idioma\mppIdioma.vb" />
     <Compile Include="Servicios\mppUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
