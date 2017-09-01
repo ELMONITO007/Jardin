@@ -23,7 +23,7 @@ Public Class dalIdioma
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Function IdatosCompleto_Buscar(ID As Integer) As DataTable
+    Public Overrides Function IdatosCompleto_Buscar(dato As String) As DataTable
         Throw New NotImplementedException()
     End Function
 

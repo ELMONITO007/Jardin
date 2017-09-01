@@ -5,4 +5,8 @@
         palabra = _palabra
 
     End Sub
+
+    Public Function getPalabra() As String
+        Return palabra
+    End Function
 End Class

@@ -21,3 +21,11 @@ C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\obj\De
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\obj\Debug\UI.exe
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\obj\Debug\UI.xml
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\obj\Debug\UI.pdb
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar.Design.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\MetroFramework.Design.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\MetroFramework.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\obj\Debug\UI.iuLogin.resources
+C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar.Layout.dll
