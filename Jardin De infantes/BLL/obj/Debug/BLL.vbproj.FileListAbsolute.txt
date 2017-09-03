@@ -16,3 +16,22 @@ C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\BLL\obj\D
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\BLL\obj\Debug\BLL.dll
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\BLL\obj\Debug\BLL.xml
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\BLL\obj\Debug\BLL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\BLL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\BLL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\BLL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\DAL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\EE.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\MP.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\DAL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\DAL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\EE.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\EE.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\MP.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\MP.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.pdb

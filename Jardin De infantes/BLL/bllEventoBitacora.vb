@@ -4,7 +4,7 @@ Public Class bllEventoBitacora
     Public Function ListarEventos() As List(Of EventoBitacora)
         Dim dal As New dalEventoBitacora
         Dim listaEventos As New List(Of EventoBitacora)
-        listaEventos = dal.IdatosCompleto_Listar
+        'listaEventos = dal.IdatosCompleto_Listar
         Return listaEventos
 
 

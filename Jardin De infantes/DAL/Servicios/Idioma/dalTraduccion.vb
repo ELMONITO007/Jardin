@@ -1,8 +1,9 @@
-﻿Imports EE
+﻿
 Imports System.Data.SqlClient
 Imports MP
 Public Class dalTraduccion(Of Traduccion)
     Inherits DAL(Of Traduccion)
+
     Private db As Conexion
     Private _cmd As IDbCommand
     Sub New()
@@ -21,32 +22,38 @@ Public Class dalTraduccion(Of Traduccion)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As DataTable
+    Public Function IdatosCompletoHT_Buscar(HT As Hashtable) As Hashtable
         Try
-            Dim listaEventos As New List(Of Palabra)
-            Dim cmd As IDbCommand = db.CrearComando
+
+            Dim cmd As SqlCommand = db.CrearComando
+
             cmd.CommandType = CommandType.StoredProcedure
-            cmd.CommandText = "p_buscarPalalaPorIdioma"
-            cmd.Parameters.Add(dato)
+            cmd.CommandText = "p_ListarPalabrasPorIdioma"
+            For Each item As String In HT.Keys
+                cmd.Parameters.AddWithValue(item, HT(item))
+            Next
             cmd.ExecuteNonQuery()
             Dim da As New SqlDataAdapter(cmd)
             Dim dt As New DataTable
             da.Fill(dt)
             db.RealizarCommit()
 
-            Dim mapear As New mppEventoBitacora
-            listaEventos = mapear.listar(dt)
-            Return listaEventos
+            Dim mapear As New mppTraduccion
+            Return mapear.listarHT(dt)
 
         Catch ex As Exception
             db.RealizarRollBack()
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error al ver la bitacora")
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
             Return Nothing
         End Try
         db.cerrarConexion()
     End Function
 
     Public Overrides Function IdatosCompleto_Listar() As List(Of Traduccion)
+        Throw New NotImplementedException()
+    End Function
+
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As DataTable
         Throw New NotImplementedException()
     End Function
 End Class

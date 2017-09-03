@@ -16,18 +16,18 @@ Public Class mppBitacora
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function Eliminar(ID As Integer) As Hashtable
+    Public Overrides Function Eliminar(unObjeto As Bitacora) As Hashtable
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function Buscar(ID As Integer) As Hashtable
-        Dim ht As New Hashtable
-        With ht
-            .Add("@ID", ID)
+    Public Overrides Function Buscar(unObjeto As Bitacora) As Hashtable
+        'Dim ht As New Hashtable
+        'With ht
+        '    .Add("@ID", ID)
 
-        End With
+        'End With
 
-        Return ht
+        'Return ht
     End Function
 
     Public Overrides Function listar(dt As DataTable) As List(Of Bitacora)

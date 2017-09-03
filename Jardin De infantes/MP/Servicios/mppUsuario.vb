@@ -10,11 +10,11 @@ Public Class mppUsuario
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function Eliminar(ID As Integer) As Hashtable
+    Public Overrides Function Eliminar(unObjeto As Usuario) As Hashtable
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function Buscar(ID As Integer) As Hashtable
+    Public Overrides Function Buscar(unObjeto As Usuario) As Hashtable
         Throw New NotImplementedException()
     End Function
 

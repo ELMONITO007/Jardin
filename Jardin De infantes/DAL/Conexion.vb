@@ -8,7 +8,7 @@ Public Class Conexion
     Private _transaccion As IDbTransaction
     Private _conexion As IDbConnection
     Public Sub New()
-        _conexion = New SqlConnection(ConfigurationManager.ConnectionStrings("Notebook").ConnectionString)
+        _conexion = New SqlConnection(ConfigurationManager.ConnectionStrings("PC").ConnectionString)
         _conexion.Open()
 
         _transaccion = _conexion.BeginTransaction()
@@ -18,7 +18,7 @@ Public Class Conexion
     Public Sub abrirconexion()
         _conexion.Open()
     End Sub
-    Public Function CrearComando() As IDbCommand
+    Public Function CrearComando() As SqlCommand
         Dim cmd As New SqlCommand
         cmd = _conexion.CreateCommand
         cmd.Transaction = _transaccion

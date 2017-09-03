@@ -29,3 +29,28 @@ C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\De
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\obj\Debug\UI.iuLogin.resources
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.exe.config
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.exe
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\BLL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\EE.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DAL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\MP.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\BLL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\BLL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\EE.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\EE.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DAL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DAL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\MP.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\MP.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.Form1.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuLogin.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.Resources.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbproj.CoreCompileInputs.cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.exe
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.pdb

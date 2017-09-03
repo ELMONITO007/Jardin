@@ -82,6 +82,8 @@
     <Compile Include="Servicios\Bitacora\mppBitacora.vb" />
     <Compile Include="Servicios\Bitacora\mppEventoBitacora.vb" />
     <Compile Include="Servicios\Idioma\mppIdioma.vb" />
+    <Compile Include="Servicios\Idioma\mppPalabra.vb" />
+    <Compile Include="Servicios\Idioma\mppTraduccion.vb" />
     <Compile Include="Servicios\mppUsuario.vb" />
   </ItemGroup>
   <ItemGroup>

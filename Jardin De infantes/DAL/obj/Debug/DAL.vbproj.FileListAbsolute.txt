@@ -13,3 +13,19 @@ C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\DAL\obj\D
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\DAL\obj\Debug\DAL.dll
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\DAL\obj\Debug\DAL.xml
 C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\DAL\obj\Debug\DAL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\obj\Debug\DAL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\DAL.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\DAL.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\DAL.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\EE.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\MP.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\EE.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\EE.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\MP.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\DAL\bin\Debug\MP.xml
