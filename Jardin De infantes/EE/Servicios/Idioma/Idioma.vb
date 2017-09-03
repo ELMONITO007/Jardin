@@ -5,6 +5,9 @@
         idioma = _Idioma
 
     End Sub
+    Sub New()
+
+    End Sub
 
     Function getIdioma() As String
         Return idioma

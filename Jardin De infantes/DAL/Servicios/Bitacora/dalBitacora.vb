@@ -12,23 +12,24 @@ Public Class dalBitacora(Of bitacora)
 
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Modificar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Modificar(HT As Hashtable, sp As String)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable, sp As String)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable, sp As String)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As DataTable
+
+    Public Overrides Function IdatosCompleto_Listar() As List(Of bitacora)
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function IdatosCompleto_Listar() As List(Of bitacora)
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of bitacora)
         Throw New NotImplementedException()
     End Function
 End Class

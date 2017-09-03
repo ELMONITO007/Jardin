@@ -87,6 +87,7 @@
     <Compile Include="Servicios\Bitacora\dalEventoBitacora.vb" />
     <Compile Include="Servicios\Idioma\dalIdioma.vb" />
     <Compile Include="Servicios\Idioma\dalTraduccion.vb" />
+    <Compile Include="Servicios\Login\dalUsuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

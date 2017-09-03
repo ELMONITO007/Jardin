@@ -3,6 +3,7 @@ Imports System.Data.SqlClient
 Imports MP
 Public Class dalIdioma
     Inherits DAL(Of Idioma)
+
     Private db As Conexion
     Private _cmd As IDbCommand
 
@@ -11,21 +12,18 @@ Public Class dalIdioma
 
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Modificar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Modificar(HT As Hashtable, sp As String)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable, sp As String)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable)
+    Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable, sp As String)
         Throw New NotImplementedException()
     End Sub
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As DataTable
-        Throw New NotImplementedException()
-    End Function
 
     Public Overrides Function IdatosCompleto_Listar() As List(Of Idioma)
 
@@ -46,5 +44,9 @@ Public Class dalIdioma
             MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Error al ver Idiomas")
             Return Nothing
         End Try
+    End Function
+
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of Idioma)
+        Throw New NotImplementedException()
     End Function
 End Class

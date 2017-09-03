@@ -72,7 +72,7 @@ Partial Class iuLogin
         '
         Me.txtUsuario.Border.Class = "TextBoxBorder"
         Me.txtUsuario.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.txtUsuario.Location = New System.Drawing.Point(270, 222)
+        Me.txtUsuario.Location = New System.Drawing.Point(259, 125)
         Me.txtUsuario.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.PreventEnterBeep = True
@@ -86,7 +86,7 @@ Partial Class iuLogin
         '
         Me.lblUsuario.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.lblUsuario.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsuario.Location = New System.Drawing.Point(51, 222)
+        Me.lblUsuario.Location = New System.Drawing.Point(40, 125)
         Me.lblUsuario.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(112, 35)
@@ -100,7 +100,7 @@ Partial Class iuLogin
         Me.txtIdioma.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.txtIdioma.FormattingEnabled = True
         Me.txtIdioma.ItemHeight = 14
-        Me.txtIdioma.Location = New System.Drawing.Point(562, 74)
+        Me.txtIdioma.Location = New System.Drawing.Point(240, 79)
         Me.txtIdioma.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtIdioma.Name = "txtIdioma"
         Me.txtIdioma.Size = New System.Drawing.Size(180, 20)
@@ -113,7 +113,7 @@ Partial Class iuLogin
         '
         '
         Me.lblContrasenia.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.lblContrasenia.Location = New System.Drawing.Point(51, 305)
+        Me.lblContrasenia.Location = New System.Drawing.Point(40, 208)
         Me.lblContrasenia.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.lblContrasenia.Name = "lblContrasenia"
         Me.lblContrasenia.Size = New System.Drawing.Size(112, 35)
@@ -127,7 +127,7 @@ Partial Class iuLogin
         '
         Me.txtPassword.Border.Class = "TextBoxBorder"
         Me.txtPassword.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.txtPassword.Location = New System.Drawing.Point(270, 309)
+        Me.txtPassword.Location = New System.Drawing.Point(259, 212)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -139,7 +139,7 @@ Partial Class iuLogin
         '
         Me.btnAceptar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.btnAceptar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.btnAceptar.Location = New System.Drawing.Point(34, 412)
+        Me.btnAceptar.Location = New System.Drawing.Point(23, 315)
         Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(112, 35)
@@ -151,7 +151,7 @@ Partial Class iuLogin
         '
         Me.btnCancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.btnCancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.btnCancelar.Location = New System.Drawing.Point(254, 412)
+        Me.btnCancelar.Location = New System.Drawing.Point(243, 315)
         Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(112, 35)
@@ -169,7 +169,7 @@ Partial Class iuLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(778, 589)
+        Me.ClientSize = New System.Drawing.Size(434, 371)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.lblContrasenia)

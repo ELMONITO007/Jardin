@@ -5,6 +5,7 @@
     Private Property logueado As Boolean
     Private Property digitoVerificadorH As String
     Private Property bloqueado As Boolean
+    Private Property idioma As Idioma
 
     Sub New()
 
@@ -17,6 +18,20 @@
         digitoVerificadorH = _digitoVerificadorH
         bloqueado = _bloqueado
     End Sub
+    Sub New(_nombreUsuario As String, _idiomas As Idioma)
+        nombreUsuario = _nombreUsuario
+        idioma = _idiomas
+    End Sub
+
+    Sub New(_nombreUsuario As String)
+        nombreUsuario = _nombreUsuario
+    End Sub
+    Public Function getUsuario() As String
+        Return nombreUsuario
+    End Function
+    Public Function getIdiomas() As String
+        Return idioma.getIdioma
+    End Function
 
 
 End Class

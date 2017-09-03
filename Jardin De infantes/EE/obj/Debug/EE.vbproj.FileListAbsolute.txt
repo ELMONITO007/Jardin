@@ -10,7 +10,6 @@ C:\Users\benitand\Google Drive\-uai\Codigo TP Final\Jardin De infantes\EE\obj\De
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\bin\Debug\EE.dll
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\bin\Debug\EE.pdb
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\bin\Debug\EE.xml
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbprojResolveAssemblyReference.cache
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.Resources.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbproj.GenerateResource.Cache
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbproj.CoreCompileInputs.cache

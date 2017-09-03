@@ -15,10 +15,24 @@ Public Class mppUsuario
     End Function
 
     Public Overrides Function Buscar(unObjeto As Usuario) As Hashtable
-        Throw New NotImplementedException()
+        Dim ht As New Hashtable
+        With ht
+            .Add("@Usuario", unObjeto.getUsuario)
+        End With
+        Return ht
     End Function
 
     Public Overrides Function listar(dt As DataTable) As List(Of Usuario)
         Throw New NotImplementedException()
+    End Function
+
+    Public Function ModificarIdioma(dt As Usuario) As Hashtable
+        Dim ht As New Hashtable
+        With ht
+            .Add("@Usuario", dt.getUsuario)
+            .Add("@idioma", dt.getIdiomas)
+        End With
+
+        Return ht
     End Function
 End Class
