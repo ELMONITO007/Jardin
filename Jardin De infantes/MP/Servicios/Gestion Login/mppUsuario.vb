@@ -23,7 +23,10 @@ Public Class mppUsuario
     End Function
 
     Public Overrides Function listar(dt As DataTable) As List(Of Usuario)
-        Throw New NotImplementedException()
+        For Each item As DataRow In dt.Rows
+
+        Next
+
     End Function
 
     Public Function ModificarIdioma(dt As Usuario) As Hashtable
@@ -35,4 +38,11 @@ Public Class mppUsuario
 
         Return ht
     End Function
+    Public Function BuuscarUnUsuario(NombreUsuario As String) As Hashtable
+        Dim ht As New Hashtable
+        ht.Add("@NombreUsuario", NombreUsuario)
+        Return ht
+
+    End Function
+
 End Class

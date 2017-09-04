@@ -29,7 +29,7 @@ Public Class dalBitacora(Of bitacora)
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of bitacora)
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of bitacora)
         Throw New NotImplementedException()
     End Function
 End Class

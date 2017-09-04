@@ -53,7 +53,7 @@ Public Class dalTraduccion(Of Traduccion)
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of Traduccion)
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of Traduccion)
         Throw New NotImplementedException()
     End Function
 End Class

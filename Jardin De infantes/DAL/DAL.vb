@@ -16,7 +16,7 @@ Public MustInherit Class DAL(Of T)
 
 
 
-    Public MustOverride Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of T) Implements IdatosCompleto(Of T).Buscar
+    Public MustOverride Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of T) Implements IdatosCompleto(Of T).Buscar
 
 
     Public MustOverride Function IdatosCompleto_Listar() As List(Of T) Implements IdatosCompleto(Of T).Listar

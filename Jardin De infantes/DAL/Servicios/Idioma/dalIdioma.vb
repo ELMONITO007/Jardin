@@ -46,7 +46,7 @@ Public Class dalIdioma
         End Try
     End Function
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of Idioma)
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of Idioma)
         Throw New NotImplementedException()
     End Function
 End Class

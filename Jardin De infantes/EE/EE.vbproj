@@ -78,6 +78,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Servicios\Gestion usuario\sessionManager.vb" />
     <Compile Include="Servicios\Idioma\Idioma.vb" />
     <Compile Include="Servicios\Idioma\Palabra.vb" />
     <Compile Include="Persona\Persona.vb" />

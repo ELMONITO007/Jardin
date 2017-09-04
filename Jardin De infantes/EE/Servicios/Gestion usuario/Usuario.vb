@@ -7,6 +7,7 @@
     Private Property bloqueado As Boolean
     Private Property idioma As Idioma
 
+
     Sub New()
 
     End Sub
@@ -33,5 +34,18 @@
         Return idioma.getIdioma
     End Function
 
+    Public Function getCOntrasenia() As String
+        Return contraseña
+    End Function
+    Public Function getBLoqueado() As Boolean
+        Return bloqueado
+    End Function
 
+
+    Public Function getObtenerTodoJunto() As String
+        Return nombreUsuario + contraseña + intentosFallido + logueado + bloqueado
+    End Function
+    Public Function getDVH() As String
+        Return digitoVerificadorH
+    End Function
 End Class

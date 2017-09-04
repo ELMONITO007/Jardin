@@ -73,10 +73,18 @@ Public Class iuLogin
     End Sub
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+        Dim unbllusuario As New bllUsuario
+
+
+
         Dim unIdioma As New Idioma(txtIdioma.Text)
         Dim unUsuario As New Usuario(txtUsuario.Text, unIdioma)
-        Dim unbllusuario As New bllUsuario
-        unbllusuario.ModificarIdioma(unUsuario)
+
+        MsgBox(unbllusuario.VerificarCompletoUsuario(Nothing, "ww", txtUsuario.Text))
+
+
+
+        'unbllusuario.ModificarIdioma(unUsuario)
 
     End Sub
 End Class

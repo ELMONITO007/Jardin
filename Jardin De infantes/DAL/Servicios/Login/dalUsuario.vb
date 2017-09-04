@@ -35,11 +35,51 @@ Public Class dalUsurio(Of usuario)
     End Sub
 
     Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable, sp As String)
-        Throw New NotImplementedException()
+
+        Try
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandText = sp
+            For Each item As String In HT.Keys
+                cmd.Parameters.AddWithValue(item, HT(item))
+            Next
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            db.RealizarCommit()
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+
+        End Try
+        db.cerrarConexion()
     End Sub
 
     Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable, sp As String)
-        Throw New NotImplementedException()
+
+        Try
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandText = sp
+            For Each item As String In HT.Keys
+                cmd.Parameters.AddWithValue(item, HT(item))
+            Next
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            db.RealizarCommit()
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+
+        End Try
+        db.cerrarConexion()
     End Sub
 
     Public Function IdatosCompleto_BuscarIdioma(HT As Hashtable) As List(Of Idioma)
@@ -71,7 +111,60 @@ Public Class dalUsurio(Of usuario)
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable) As List(Of usuario)
-        Throw New NotImplementedException()
+    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of usuario)
+        Try
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandText = sp
+            For Each item As String In HT.Keys
+                cmd.Parameters.AddWithValue(item, HT(item))
+            Next
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            db.RealizarCommit()
+
+
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+            Return Nothing
+        End Try
+        db.cerrarConexion()
     End Function
+
+
+    Public Function VerSiExisteUsuario(HT As Hashtable, sp As String) As Boolean
+        Try
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandText = sp
+            For Each item As String In HT.Keys
+                cmd.Parameters.AddWithValue(item, HT(item))
+            Next
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            db.RealizarCommit()
+            If dt.Rows.Count = 0 Then
+                Return False
+            Else
+                Return True
+
+            End If
+
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+            Return Nothing
+        End Try
+        db.cerrarConexion()
+    End Function
+
 End Class
