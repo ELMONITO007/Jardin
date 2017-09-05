@@ -86,6 +86,7 @@ Public Class dalUsurio(Of usuario)
         Try
             Dim cmd As SqlCommand = db.CrearComando
 
+
             cmd.CommandType = CommandType.StoredProcedure
             cmd.CommandText = "p_VerIdiomaUsuario"
             For Each item As String In HT.Keys
@@ -112,19 +113,28 @@ Public Class dalUsurio(Of usuario)
     End Function
 
     Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of usuario)
+
+    End Function
+
+    Public Function BuscarUsuario(ht As Hashtable, sp As String) As DataTable
         Try
             Dim cmd As SqlCommand = db.CrearComando
 
             cmd.CommandType = CommandType.StoredProcedure
             cmd.CommandText = sp
-            For Each item As String In HT.Keys
-                cmd.Parameters.AddWithValue(item, HT(item))
+            For Each item As String In ht.Keys
+                cmd.Parameters.AddWithValue(item, ht(item))
             Next
             cmd.ExecuteNonQuery()
             Dim da As New SqlDataAdapter(cmd)
             Dim dt As New DataTable
             da.Fill(dt)
             db.RealizarCommit()
+
+            Return dt
+
+
+
 
 
 
@@ -135,8 +145,6 @@ Public Class dalUsurio(Of usuario)
         End Try
         db.cerrarConexion()
     End Function
-
-
     Public Function VerSiExisteUsuario(HT As Hashtable, sp As String) As Boolean
         Try
             Dim cmd As SqlCommand = db.CrearComando

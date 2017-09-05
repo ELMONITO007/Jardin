@@ -6,18 +6,22 @@
     Private Property digitoVerificadorH As String
     Private Property bloqueado As Boolean
     Private Property idioma As Idioma
+    Private Property persona As Persona
 
 
     Sub New()
 
     End Sub
-    Sub New(_nombreUsuario As String, _contraseña As String, _intentosFallido As Integer, _logueado As Boolean, _digitoVerificadorH As String, _bloqueado As Boolean)
+
+    Sub New(_nombreUsuario As String, _contraseña As String, _intentosFallido As Integer, _logueado As Boolean, _digitoVerificadorH As String, _bloqueado As Boolean, _idioma As Idioma, _persona As Persona)
         nombreUsuario = _nombreUsuario
         contraseña = _contraseña
         intentosFallido = _intentosFallido
         logueado = _logueado
         digitoVerificadorH = _digitoVerificadorH
         bloqueado = _bloqueado
+        idioma = _idioma
+        persona = _persona
     End Sub
     Sub New(_nombreUsuario As String, _idiomas As Idioma)
         nombreUsuario = _nombreUsuario
@@ -47,5 +51,11 @@
     End Function
     Public Function getDVH() As String
         Return digitoVerificadorH
+    End Function
+    Public Function getPersona() As Persona
+        Return persona
+    End Function
+    Public Function getNombreUsuario() As String
+        Return nombreUsuario
     End Function
 End Class

@@ -5,7 +5,10 @@
     Protected Property dni As Integer
     Protected Property direccion As String
     Protected Property digitoVerificadorH As String
-
+    Sub New(_nombre As String, _apellido As String)
+        nombre = _nombre
+        apellido = _apellido
+    End Sub
 
     Sub New()
 
@@ -20,4 +23,11 @@
         digitoVerificadorH = _digitoVerificadorH
 
     End Sub
+    Public Function getNombre() As String
+        Return nombre
+    End Function
+    Public Function getApellido() As String
+        Return apellido
+
+    End Function
 End Class

@@ -74,13 +74,18 @@ Public Class iuLogin
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Dim unbllusuario As New bllUsuario
+        If unbllusuario.VerificarCompletoUsuario(txtPassword.Text, txtUsuario.Text) = True Then
 
 
+            MsgBox("Bienvenido " & sessionManager.intance.getUsuario.getPersona.getNombre)
+        Else
+            MetroMessageBox.Show(Me, "Usuario o Contraseña invalidas", "Error en el login", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
 
-        Dim unIdioma As New Idioma(txtIdioma.Text)
-        Dim unUsuario As New Usuario(txtUsuario.Text, unIdioma)
 
-        MsgBox(unbllusuario.VerificarCompletoUsuario(Nothing, "ww", txtUsuario.Text))
+        'Dim unIdioma As New Idioma(txtIdioma.Text)
+        'Dim unUsuario As New Usuario(txtUsuario.Text, unIdioma)
+
 
 
 

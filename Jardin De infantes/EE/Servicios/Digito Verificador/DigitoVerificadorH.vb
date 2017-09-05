@@ -17,7 +17,7 @@
     End Function
 
     Public Function VerificadorDigitoVerificadorH() As Boolean
-        Dim hashear As New EncriptarSHA256(valorRecibido)
+        Dim hashear As New EncriptarSHA5(valorRecibido)
         Dim valorInicialHasheado As String = hashear.Hashear
         If valorInicialHasheado = valorHasheado Then
             Return True

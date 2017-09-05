@@ -16,8 +16,11 @@
 
     Private Property usuario As Usuario
     Public Sub login(user As Usuario)
-        usuario = user
+        _usuario = user
     End Sub
+    Public Function getUsuario() As Usuario
+        Return usuario
+    End Function
 
     Public Sub Logout()
         usuario = Nothing

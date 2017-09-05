@@ -133,7 +133,7 @@ Partial Class iuLogin
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.PreventEnterBeep = True
         Me.txtPassword.Size = New System.Drawing.Size(150, 26)
-        Me.txtPassword.TabIndex = 3
+        Me.txtPassword.TabIndex = 1
         '
         'btnAceptar
         '
@@ -144,7 +144,7 @@ Partial Class iuLogin
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(112, 35)
         Me.btnAceptar.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
-        Me.btnAceptar.TabIndex = 5
+        Me.btnAceptar.TabIndex = 2
         Me.btnAceptar.Text = "Acepta"
         '
         'btnCancelar

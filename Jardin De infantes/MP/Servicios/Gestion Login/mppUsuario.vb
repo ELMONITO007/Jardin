@@ -23,10 +23,16 @@ Public Class mppUsuario
     End Function
 
     Public Overrides Function listar(dt As DataTable) As List(Of Usuario)
+
+        Dim lista As New List(Of Usuario)
         For Each item As DataRow In dt.Rows
 
+            Dim unIdiomas As New Idioma(CStr(item("Idioma")))
+            Dim empleado As New Persona(CStr(item("nombre")), CStr(item("nombre")))
+            Dim unUsuario = New Usuario(CStr(item("NombreUsuario")), CStr(item("Contraseña")), Integer.Parse(item("IntentosFallidos")), Boolean.Parse(item("Logueado")), CStr(item("DigitoVerificadorH")), Boolean.Parse(item("bloqueado")), unIdiomas, empleado)
+            lista.Add(unUsuario)
         Next
-
+        Return lista
     End Function
 
     Public Function ModificarIdioma(dt As Usuario) As Hashtable
@@ -43,6 +49,14 @@ Public Class mppUsuario
         ht.Add("@NombreUsuario", NombreUsuario)
         Return ht
 
+    End Function
+
+    Public Function obtenerString(dt As DataTable) As String
+        Dim resultados As String = ""
+        For Each item As DataRow In dt.Rows
+            resultados = CStr(item("DGV"))
+        Next
+        Return resultados
     End Function
 
 End Class

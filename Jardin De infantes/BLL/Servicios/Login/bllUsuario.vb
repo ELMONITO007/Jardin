@@ -2,7 +2,7 @@
 Imports MP
 Imports DAL
 Public Class bllUsuario
-    Dim usuario As Usuario
+    Dim usuario As New Usuario
 
     Public Sub ModificarIdioma(unUsuario As Usuario)
         Dim mpp As New mppUsuario
@@ -21,7 +21,7 @@ Public Class bllUsuario
         ht = mpp.BuuscarUnUsuario(nombreUsuario)
         Lista = dal.IdatosCompleto_Buscar(ht, "sp_VerUsuario")
         Dim _usuario As New Usuario
-        For Each _usuario In Lista
+        For Each usuario In Lista
             _usuario = Lista.Item(0)
 
         Next
@@ -48,8 +48,10 @@ Public Class bllUsuario
         Return encriptar.Hashear()
     End Function
 
-    Public Function VerificarContraseña(contreseña As String, unUsuario As Usuario) As Boolean
-        If contreseña = unUsuario.getCOntrasenia Then
+    Public Function VerificarContraseña(contreseña As String) As Boolean
+        Dim a As String = encriptarCOntraseña(contreseña)
+        Dim b As String = usuario.getCOntrasenia
+        If encriptarCOntraseña(contreseña) = usuario.getCOntrasenia Then
             Return True
         Else
             Return False
@@ -63,31 +65,69 @@ Public Class bllUsuario
             Return True
         End If
     End Function
-    Public Function verificarDigitoVerificadorH(unUsuario As Usuario) As Boolean
-        Dim DVH As New DigitoVerificadorH(unUsuario.getObtenerTodoJunto, unUsuario.getDVH)
-        Return DVH.VerificadorDigitoVerificadorH
 
+    Public Function obtenerUsuario(nombreUsuario As String) As Usuario
+        Dim dal As New dalUsurio(Of Usuario)
+        Dim ht As New Hashtable
+        Dim mpp As New mppUsuario
+        Dim dt As New DataTable
+        Dim lista As New List(Of Usuario)
+
+        ht = mpp.BuuscarUnUsuario(nombreUsuario)
+        dt = dal.BuscarUsuario(ht, "sp_VerUsuario")
+        lista = mpp.listar(dt)
+        For Each unUsuario In lista
+            usuario = lista.Item(0)
+        Next
+        Return usuario
+
+    End Function
+    Public Function obtenerDatoDVH() As String
+        Dim dal As New dalUsurio(Of Usuario)
+        Dim ht As New Hashtable
+        Dim mpp As New mppUsuario
+        Dim dt As New DataTable
+
+
+        ht = mpp.BuuscarUnUsuario(sessionManager.intance.getUsuario.getNombreUsuario)
+        dt = dal.BuscarUsuario(ht, "dv_Usuario")
+        Return mpp.obtenerString(dt)
+
+    End Function
+    Public Function verificarDVH() As Boolean
+        Dim hash As New DigitoVerificadorH(obtenerDatoDVH, sessionManager.intance.getUsuario.getDVH)
+        Return hash.VerificadorDigitoVerificadorH
 
 
     End Function
-
-
 
     Public Function VerificarCompletoUsuario(contraseña As String, nombreUsuario As String) As Boolean
         Dim existeusuario As Boolean = VerificarUsuario(nombreUsuario)
 
 
 
-        'Dim Contraseñaencriptada As String = encriptarCOntraseña(contraseña)
-        'Dim ContraseñaCorrecta As Boolean = VerificarContraseña(Contraseñaencriptada, unUsuario)
+
+
         'Dim digitoVerificador As Boolean = verificarDigitoVerificadorH(unUsuario)
         If existeusuario = False Then
             Return False
             Exit Function
         Else
+            sessionManager.intance.login(obtenerUsuario(nombreUsuario))
+            If VerificarContraseña(contraseña) = True Then
+                If verificarDVH() = True Then
 
-            Return True
 
+
+                    Return True
+                Else
+                    sessionManager.intance.Logout()
+
+                End If
+            Else
+                sessionManager.intance.Logout()
+                Return False
+            End If
 
         End If
         'If existeusuario = True And ContraseñaCorrecta = True And digitoVerificador = True Then
