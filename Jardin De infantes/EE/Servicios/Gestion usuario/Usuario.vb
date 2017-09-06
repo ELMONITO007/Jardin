@@ -45,7 +45,9 @@
         Return bloqueado
     End Function
 
-
+    Public Sub ModificarIdioma(unIdioma As Idioma)
+        idioma = unIdioma
+    End Sub
     Public Function getObtenerTodoJunto() As String
         Return nombreUsuario + contraseña + intentosFallido + logueado + bloqueado
     End Function

@@ -74,8 +74,10 @@ Public Class iuLogin
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Dim unbllusuario As New bllUsuario
-        If unbllusuario.VerificarCompletoUsuario(txtPassword.Text, txtUsuario.Text) = True Then
 
+        If unbllusuario.VerificarCompletoUsuario(txtPassword.Text, txtUsuario.Text) = True Then
+            Dim unIdioma As New Idioma(txtIdioma.Text)
+            unbllusuario.ModificarIdioma(unIdioma)
 
             MsgBox("Bienvenido " & sessionManager.intance.getUsuario.getPersona.getNombre)
         Else
@@ -83,13 +85,7 @@ Public Class iuLogin
         End If
 
 
-        'Dim unIdioma As New Idioma(txtIdioma.Text)
-        'Dim unUsuario As New Usuario(txtUsuario.Text, unIdioma)
 
-
-
-
-        'unbllusuario.ModificarIdioma(unUsuario)
 
     End Sub
 End Class

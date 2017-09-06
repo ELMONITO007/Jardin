@@ -5,7 +5,7 @@ Public Class EncriptarSHA256
     Inherits eeEncriptado
     Sub New(_valorInicial As String)
         Me.valorInicial = _valorInicial
-        Me.valorInicial = ""
+
 
     End Sub
     Public Overrides Function Hashear() As String

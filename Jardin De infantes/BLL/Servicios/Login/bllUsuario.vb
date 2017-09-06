@@ -4,12 +4,14 @@ Imports DAL
 Public Class bllUsuario
     Dim usuario As New Usuario
 
-    Public Sub ModificarIdioma(unUsuario As Usuario)
+    Public Sub ModificarIdioma(unIdioma As Idioma)
+        sessionManager.intance.getUsuario.ModificarIdioma(unIdioma)
         Dim mpp As New mppUsuario
         Dim ht As New Hashtable
         Dim dal As New dalUsurio(Of Usuario)
-        ht = mpp.ModificarIdioma(unUsuario)
+        ht = mpp.ModificarIdioma(sessionManager.intance.getUsuario)
         dal.IdatosCompleto_Modificar(ht, "p_CambiarIdiomaUsuario")
+
 
     End Sub
     Public Function BuscarUsuario(nombreUsuario As String) As Usuario
@@ -113,10 +115,11 @@ Public Class bllUsuario
             Return False
             Exit Function
         Else
+
             sessionManager.intance.login(obtenerUsuario(nombreUsuario))
+
             If VerificarContraseña(contraseña) = True Then
                 If verificarDVH() = True Then
-
 
 
                     Return True

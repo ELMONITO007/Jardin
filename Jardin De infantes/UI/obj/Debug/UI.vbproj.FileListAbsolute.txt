@@ -46,7 +46,6 @@ C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DAL.xml
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\MP.pdb
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\MP.xml
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.Form1.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuLogin.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.Resources.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
@@ -54,3 +53,9 @@ C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbpro
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.exe
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.xml
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuPantallaPrincipal.resources

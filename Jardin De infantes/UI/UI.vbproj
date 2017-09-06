@@ -99,17 +99,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="iuLogin.Designer.vb">
       <DependentUpon>iuLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="iuLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iuPrincipal.Designer.vb">
+      <DependentUpon>iuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -129,9 +128,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="iuLogin.resx">
       <DependentUpon>iuLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +159,12 @@
       <Project>{66d4dc2d-e738-450f-8836-684ae527743f}</Project>
       <Name>EE</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
