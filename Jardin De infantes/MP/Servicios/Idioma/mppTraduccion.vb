@@ -31,10 +31,10 @@ Public Class mppTraduccion
     Public Function listarHT(dt As DataTable) As Hashtable
         Dim ht As New Hashtable
         For Each item As DataRow In dt.Rows
-            Dim traducir As String = CStr(item("Palabra"))
-            Dim referencia As String = CStr(item("Referencia"))
-            Dim unaTraduccion As New Traduccion(traducir, referencia)
-            ht.Add(referencia, traducir)
+            Dim tag As String = CStr(item("tag"))
+            Dim traduccion As String = CStr(item("traduccion"))
+
+            ht.Add(tag, traduccion)
 
 
         Next

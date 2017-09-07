@@ -92,6 +92,7 @@ Partial Class iuLogin
         Me.lblUsuario.Size = New System.Drawing.Size(112, 35)
         Me.lblUsuario.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.lblUsuario.TabIndex = 1
+        Me.lblUsuario.Tag = "Usuario"
         Me.lblUsuario.Text = "Usuari"
         '
         'txtIdioma
@@ -118,6 +119,7 @@ Partial Class iuLogin
         Me.lblContrasenia.Name = "lblContrasenia"
         Me.lblContrasenia.Size = New System.Drawing.Size(112, 35)
         Me.lblContrasenia.TabIndex = 4
+        Me.lblContrasenia.Tag = "Contraseña"
         Me.lblContrasenia.Text = "Contraseñ"
         '
         'txtPassword
@@ -145,6 +147,7 @@ Partial Class iuLogin
         Me.btnAceptar.Size = New System.Drawing.Size(112, 35)
         Me.btnAceptar.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.btnAceptar.TabIndex = 2
+        Me.btnAceptar.Tag = "Aceptar"
         Me.btnAceptar.Text = "Acepta"
         '
         'btnCancelar
@@ -157,12 +160,14 @@ Partial Class iuLogin
         Me.btnCancelar.Size = New System.Drawing.Size(112, 35)
         Me.btnCancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.btnCancelar.TabIndex = 6
+        Me.btnCancelar.Tag = "Cancelar"
         Me.btnCancelar.Text = "Cancel"
         '
         'LayoutControl1
         '
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControl1.Name = "LayoutControl1"
+        Me.LayoutControl1.Size = New System.Drawing.Size(200, 200)
         Me.LayoutControl1.TabIndex = 0
         '
         'iuLogin

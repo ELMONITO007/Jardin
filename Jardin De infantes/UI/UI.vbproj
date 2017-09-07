@@ -99,16 +99,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="iuLogin.Designer.vb">
-      <DependentUpon>iuLogin.vb</DependentUpon>
+    <Compile Include="iuHOme.Designer.vb">
+      <DependentUpon>iuHOme.vb</DependentUpon>
     </Compile>
-    <Compile Include="iuLogin.vb">
+    <Compile Include="iuHOme.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="iuPrincipal.Designer.vb">
-      <DependentUpon>iuPrincipal.vb</DependentUpon>
+    <Compile Include="Servicios\Login\iuLogin.Designer.vb">
+      <DependentUpon>iuLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="iuPrincipal.vb">
+    <Compile Include="Servicios\Login\iuLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -128,7 +128,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="iuLogin.resx">
+    <EmbeddedResource Include="iuHOme.resx">
+      <DependentUpon>iuHOme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Login\iuLogin.resx">
       <DependentUpon>iuLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -165,6 +168,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alumno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_alumno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_alumno1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_alumno %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_infra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color-violeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

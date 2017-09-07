@@ -27,6 +27,46 @@ UI
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:UI.My.Resources.Resources.alumno">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.color_violeta">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.rsz_alumno">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.rsz_alumno__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.rsz_alumno1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.rsz_images">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.rsz_images1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UI.My.Resources.Resources.rsz_infra">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:UI.My.Resources.Resources.System">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
