@@ -4,12 +4,12 @@ Imports DAL
 Public Class bllUsuario
     Dim usuario As New Usuario
 
-    Public Sub ModificarIdioma(unIdioma As Idioma)
-        sessionManager.intance.getUsuario.ModificarIdioma(unIdioma)
+    Public Sub ModificarIdioma(unIdioma As Idioma, unusuario As Usuario)
+        unusuario.ModificarIdioma(unIdioma)
         Dim mpp As New mppUsuario
         Dim ht As New Hashtable
         Dim dal As New dalUsurio(Of Usuario)
-        ht = mpp.ModificarIdioma(sessionManager.intance.getUsuario)
+        ht = mpp.ModificarIdioma(unusuario)
         dal.IdatosCompleto_Modificar(ht, "p_CambiarIdiomaUsuario")
 
 
@@ -84,26 +84,40 @@ Public Class bllUsuario
         Return usuario
 
     End Function
-    Public Function obtenerDatoDVH() As String
+    Public Function obtenerDatoDVH(unUsuario As Usuario) As String
         Dim dal As New dalUsurio(Of Usuario)
         Dim ht As New Hashtable
         Dim mpp As New mppUsuario
         Dim dt As New DataTable
 
 
-        ht = mpp.BuuscarUnUsuario(sessionManager.intance.getUsuario.getNombreUsuario)
+        ht = mpp.BuuscarUnUsuario(unUsuario.getNombreUsuario)
         dt = dal.BuscarUsuario(ht, "dv_Usuario")
         Return mpp.obtenerString(dt)
 
     End Function
-    Public Function verificarDVH() As Boolean
-        Dim hash As New DigitoVerificadorH(obtenerDatoDVH, sessionManager.intance.getUsuario.getDVH)
+    Public Function verificarDVH(unUsuario As Usuario) As Boolean
+        Dim hash As New DigitoVerificadorH(obtenerDatoDVH(unUsuario), sessionManager.intance.getUsuario.getDVH)
         Return hash.VerificadorDigitoVerificadorH
 
 
     End Function
+    Public Sub ModificarDVH(unUsuario As Usuario)
+        Dim ValorAHashear As String = obtenerDatoDVH(unUsuario)
+        Dim dal As New dalUsurio(Of Usuario)
+        Dim ht As New Hashtable
+        Dim mpp As New mppUsuario
+        Dim encriptar As New EncriptarSHA5(ValorAHashear)
+        unUsuario.ModificarDVH(encriptar.Hashear)
 
-    Public Function VerificarCompletoUsuario(contraseña As String, nombreUsuario As String) As Boolean
+        ht = mpp.ModificarDVH(unUsuario)
+        dal.IdatosCompleto_Modificar(ht, "dv_ModificarDVH")
+
+
+
+    End Sub
+
+    Public Function VerificarCompletoUsuario(contraseña As String, nombreUsuario As String, idioma As String) As Boolean
         Dim existeusuario As Boolean = VerificarUsuario(nombreUsuario)
 
 
@@ -115,11 +129,14 @@ Public Class bllUsuario
             Return False
             Exit Function
         Else
-
+            Dim unUsuario As New Usuario(nombreUsuario)
+            Dim unIdioma As New Idioma(idioma)
+            ModificarIdioma(unIdioma, unUsuario)
+            ModificarDVH(unUsuario)
             sessionManager.intance.login(obtenerUsuario(nombreUsuario))
 
             If VerificarContraseña(contraseña) = True Then
-                If verificarDVH() = True Then
+                If verificarDVH(sessionManager.intance.getUsuario) = True Then
 
 
                     Return True

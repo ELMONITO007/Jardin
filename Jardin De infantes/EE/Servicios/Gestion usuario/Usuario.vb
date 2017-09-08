@@ -37,6 +37,9 @@
     Public Function getIdiomas() As String
         Return idioma.getIdioma
     End Function
+    Public Function getUnIdioma() As Idioma
+        Return idioma
+    End Function
 
     Public Function getCOntrasenia() As String
         Return contraseña
@@ -47,6 +50,9 @@
 
     Public Sub ModificarIdioma(unIdioma As Idioma)
         idioma = unIdioma
+    End Sub
+    Public Sub ModificarDVH(DVH As String)
+        digitoVerificadorH = DVH
     End Sub
     Public Function getObtenerTodoJunto() As String
         Return nombreUsuario + contraseña + intentosFallido + logueado + bloqueado

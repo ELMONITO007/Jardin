@@ -5,35 +5,6 @@ Public Class iuLogin
     Dim idioma As String
 
 
-    'Sub BuscarIdioma()
-    '    Dim bllIdioma As New bllIdioma
-    '    Dim unIdioma As New Idioma()
-    '    unIdioma = bllIdioma.UsuarioIdioma(unUsuario)
-    '    idioma = unIdioma.getIdioma
-    'End Sub
-
-    'Sub cambiaridioma()
-
-    '    Dim unbllTraducir As New bllTraduccion
-
-    '    Dim unIdioma As New Idioma(idioma)
-    '    Dim unTraducir As New Traduccion(unIdioma)
-    '    Dim ht As New Hashtable
-    '    ht = unbllTraducir.ListarPalabrasTraducidas(unTraducir)
-    '    For Each item As DictionaryEntry In ht
-    '        For Each controlcito In Me.Controls
-
-    '            If controlcito.Name = item.Key Then
-    '                controlcito.Text = item.Value
-
-    '            End If
-
-
-
-
-    '        Next
-    '    Next
-    'End Sub
 
     Sub cambiaIdiomaForm()
 
@@ -76,13 +47,20 @@ Public Class iuLogin
     End Sub
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+
+
         Dim unbllusuario As New bllUsuario
 
-        If unbllusuario.VerificarCompletoUsuario(txtPassword.Text, txtUsuario.Text) = True Then
-            Dim unIdioma As New Idioma(txtIdioma.Text)
-            unbllusuario.ModificarIdioma(unIdioma)
+        If unbllusuario.VerificarCompletoUsuario(txtPassword.Text, txtUsuario.Text, txtIdioma.Text) = True Then
 
-            MsgBox("Bienvenido " & sessionManager.intance.getUsuario.getPersona.getNombre)
+
+
+            MsgBox("Bienvenido " & sessionManager.intance.getUsuario.getPersona.getNombre, , "")
+            Dim frmPrincipa As New iuHOme
+
+            frmPrincipa.ShowDialog()
+            Me.Close()
+
         Else
             MetroMessageBox.Show(Me, "Usuario o Contraseña invalidas", "Error en el login", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If

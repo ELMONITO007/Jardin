@@ -59,4 +59,12 @@ Public Class mppUsuario
         Return resultados
     End Function
 
+    Public Function ModificarDVH(unUsuario As Usuario) As Hashtable
+        Dim ht As New Hashtable
+        With ht
+            .Add("@Usuario", unUsuario.getNombreUsuario)
+            .Add("@DVH", unUsuario.getDVH)
+        End With
+        Return ht
+    End Function
 End Class

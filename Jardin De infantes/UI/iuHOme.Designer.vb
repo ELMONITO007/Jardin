@@ -23,11 +23,13 @@ Partial Class iuHOme
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
+        Me.mtServicios = New MetroFramework.Controls.MetroTile()
         Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
         Me.mtInfra = New MetroFramework.Controls.MetroTile()
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
         Me.mtAlumnos = New MetroFramework.Controls.MetroTile()
+        Me.btnCerrarSesion = New System.Windows.Forms.Button()
+        Me.lblUsuario = New DevComponents.DotNetBar.LabelX()
         Me.SuspendLayout()
         '
         'MetroTile5
@@ -49,24 +51,26 @@ Partial Class iuHOme
         Me.MetroTile5.UseSelectable = True
         Me.MetroTile5.UseTileImage = True
         '
-        'MetroTile4
+        'mtServicios
         '
-        Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MetroTile4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MetroTile4.Location = New System.Drawing.Point(633, 301)
-        Me.MetroTile4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.MetroTile4.Name = "MetroTile4"
-        Me.MetroTile4.Size = New System.Drawing.Size(283, 185)
-        Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Lime
-        Me.MetroTile4.TabIndex = 17
-        Me.MetroTile4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile4.TileImage = Global.UI.My.Resources.Resources.rsz_images
-        Me.MetroTile4.TileImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.MetroTile4.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
-        Me.MetroTile4.UseSelectable = True
-        Me.MetroTile4.UseTileImage = True
+        Me.mtServicios.ActiveControl = Nothing
+        Me.mtServicios.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.mtServicios.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.mtServicios.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.mtServicios.Location = New System.Drawing.Point(633, 301)
+        Me.mtServicios.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.mtServicios.Name = "mtServicios"
+        Me.mtServicios.Size = New System.Drawing.Size(283, 185)
+        Me.mtServicios.Style = MetroFramework.MetroColorStyle.White
+        Me.mtServicios.TabIndex = 17
+        Me.mtServicios.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.mtServicios.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.mtServicios.TileImage = Global.UI.My.Resources.Resources.conf1
+        Me.mtServicios.TileImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.mtServicios.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.mtServicios.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular
+        Me.mtServicios.UseSelectable = True
+        Me.mtServicios.UseTileImage = True
         '
         'MetroTile3
         '
@@ -141,9 +145,30 @@ Partial Class iuHOme
         Me.mtAlumnos.TileImage = Global.UI.My.Resources.Resources.rsz_images1
         Me.mtAlumnos.TileImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.mtAlumnos.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
-        Me.mtAlumnos.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.mtAlumnos.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular
         Me.mtAlumnos.UseSelectable = True
         Me.mtAlumnos.UseTileImage = True
+        '
+        'btnCerrarSesion
+        '
+        Me.btnCerrarSesion.Location = New System.Drawing.Point(808, 16)
+        Me.btnCerrarSesion.Name = "btnCerrarSesion"
+        Me.btnCerrarSesion.Size = New System.Drawing.Size(109, 31)
+        Me.btnCerrarSesion.TabIndex = 19
+        Me.btnCerrarSesion.Tag = "Cerrar Sesion"
+        Me.btnCerrarSesion.Text = "Deslogueo"
+        Me.btnCerrarSesion.UseVisualStyleBackColor = True
+        '
+        'lblUsuario
+        '
+        '
+        '
+        '
+        Me.lblUsuario.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.lblUsuario.Location = New System.Drawing.Point(624, 18)
+        Me.lblUsuario.Name = "lblUsuario"
+        Me.lblUsuario.Size = New System.Drawing.Size(129, 29)
+        Me.lblUsuario.TabIndex = 20
         '
         'iuHOme
         '
@@ -153,8 +178,10 @@ Partial Class iuHOme
         Me.BackLocation = MetroFramework.Forms.BackLocation.TopRight
         Me.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle
         Me.ClientSize = New System.Drawing.Size(1007, 637)
+        Me.Controls.Add(Me.lblUsuario)
+        Me.Controls.Add(Me.btnCerrarSesion)
         Me.Controls.Add(Me.MetroTile5)
-        Me.Controls.Add(Me.MetroTile4)
+        Me.Controls.Add(Me.mtServicios)
         Me.Controls.Add(Me.MetroTile3)
         Me.Controls.Add(Me.mtInfra)
         Me.Controls.Add(Me.MetroTile1)
@@ -170,6 +197,8 @@ Partial Class iuHOme
     Friend WithEvents MetroTile1 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtInfra As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile3 As MetroFramework.Controls.MetroTile
-    Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
+    Friend WithEvents mtServicios As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile5 As MetroFramework.Controls.MetroTile
+    Friend WithEvents btnCerrarSesion As Button
+    Friend WithEvents lblUsuario As DevComponents.DotNetBar.LabelX
 End Class

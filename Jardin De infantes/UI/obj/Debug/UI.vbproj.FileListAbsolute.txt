@@ -59,3 +59,4 @@ C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevCompo
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar2.xml
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.Instrumentation.xml
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuHOme.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuServiciosHome.resources
