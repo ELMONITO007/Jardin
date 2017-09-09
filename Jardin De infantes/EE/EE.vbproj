@@ -91,6 +91,7 @@
     <Compile Include="Servicios\Encriptado\EncriptarSHA256.vb" />
     <Compile Include="Servicios\Encriptado\EncriptarSHA5.vb" />
     <Compile Include="Servicios\Gestion usuario\Usuario.vb" />
+    <Compile Include="Servicios\Idioma\SingletonIdioma.vb" />
     <Compile Include="Servicios\Idioma\Traduccion.vb" />
   </ItemGroup>
   <ItemGroup>

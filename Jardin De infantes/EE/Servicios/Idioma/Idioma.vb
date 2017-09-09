@@ -8,7 +8,9 @@
     Sub New()
 
     End Sub
-
+    Public Sub CambiarIdioma(nidioma As String)
+        idioma = nidioma
+    End Sub
     Function getIdioma() As String
         Return idioma
     End Function

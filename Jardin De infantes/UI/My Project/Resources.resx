@@ -130,8 +130,11 @@
   <data name="bk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bk1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="System1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\System1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="intit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="conf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,14 +148,20 @@
   <data name="rsz_alumno1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_alumno1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cambiarcontraseña1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cambiarcontraseña1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_infra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_infra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="infra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infra1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="color-violeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color-violeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ventas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ventas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alumno.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,19 +169,28 @@
   <data name="rsz_alumno (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_alumno (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuario1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_infra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_infra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="permisos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\permisos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="usuario11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\System1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="idioma1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idioma1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="System" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\System.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="usuario11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuario11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AgregarIdioma1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgregarIdioma1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

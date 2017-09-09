@@ -105,6 +105,18 @@
     <Compile Include="iuHOme.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Servicios\Idioma\iuCambiarIdioma.Designer.vb">
+      <DependentUpon>iuCambiarIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Idioma\iuCambiarIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\Idioma\iuIdioma.Designer.vb">
+      <DependentUpon>iuIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Idioma\iuIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Servicios\iuServiciosHome.Designer.vb">
       <DependentUpon>iuServiciosHome.vb</DependentUpon>
     </Compile>
@@ -136,6 +148,12 @@
   <ItemGroup>
     <EmbeddedResource Include="iuHOme.resx">
       <DependentUpon>iuHOme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Idioma\iuCambiarIdioma.resx">
+      <DependentUpon>iuCambiarIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Idioma\iuIdioma.resx">
+      <DependentUpon>iuIdioma.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servicios\iuServiciosHome.resx">
       <DependentUpon>iuServiciosHome.vb</DependentUpon>
@@ -231,6 +249,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usuario11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infra1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambiarcontraseña1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarIdioma1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

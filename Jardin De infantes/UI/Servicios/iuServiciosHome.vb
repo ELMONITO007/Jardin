@@ -9,7 +9,7 @@ Public Class iuServiciosHome
         Dim unbllTraducir As New bllTraduccion
 
 
-        Dim unTraducir As New Traduccion(sessionManager.intance.getUsuario.getUnIdioma)
+        Dim unTraducir As New Traduccion(SingletonIdioma.intance.getUsuario)
         Dim ht As New Hashtable
         ht = unbllTraducir.ListarPalabrasTraducidas(unTraducir)
         For Each item As DictionaryEntry In ht
@@ -32,5 +32,11 @@ Public Class iuServiciosHome
     Private Sub iuServiciosHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cambiaridioma()
 
+    End Sub
+
+    Private Sub mtIdioma_Click(sender As Object, e As EventArgs) Handles mtIdioma.Click
+        Dim frm As New iuIdioma
+        frm.ShowDialog()
+        cambiaridioma()
     End Sub
 End Class

@@ -9,9 +9,9 @@ Public Class iuLogin
     Sub cambiaIdiomaForm()
 
         Dim unbllTraducir As New bllTraduccion
-
         Dim unIdioma As New Idioma(txtIdioma.Text)
-        Dim unTraducir As New Traduccion(unIdioma)
+        SingletonIdioma.intance.NuevoIdioma(unIdioma)
+        Dim unTraducir As New Traduccion(SingletonIdioma.intance.getUsuario)
         Dim ht As New Hashtable
         ht = unbllTraducir.ListarPalabrasTraducidas(unTraducir)
         For Each item As DictionaryEntry In ht
@@ -67,6 +67,10 @@ Public Class iuLogin
 
 
 
+
+    End Sub
+
+    Private Sub lblUsuario_Click(sender As Object, e As EventArgs) Handles lblUsuario.Click
 
     End Sub
 End Class

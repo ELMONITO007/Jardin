@@ -27,23 +27,15 @@ Public Class mppUsuario
         Dim lista As New List(Of Usuario)
         For Each item As DataRow In dt.Rows
 
-            Dim unIdiomas As New Idioma(CStr(item("Idioma")))
+
             Dim empleado As New Persona(CStr(item("nombre")), CStr(item("nombre")))
-            Dim unUsuario = New Usuario(CStr(item("NombreUsuario")), CStr(item("Contraseña")), Integer.Parse(item("IntentosFallidos")), Boolean.Parse(item("Logueado")), CStr(item("DigitoVerificadorH")), Boolean.Parse(item("bloqueado")), unIdiomas, empleado)
+            Dim unUsuario = New Usuario(CStr(item("NombreUsuario")), CStr(item("Contraseña")), Integer.Parse(item("IntentosFallidos")), Boolean.Parse(item("Logueado")), CStr(item("DigitoVerificadorH")), Boolean.Parse(item("bloqueado")), empleado)
             lista.Add(unUsuario)
         Next
         Return lista
     End Function
 
-    Public Function ModificarIdioma(dt As Usuario) As Hashtable
-        Dim ht As New Hashtable
-        With ht
-            .Add("@Usuario", dt.getUsuario)
-            .Add("@idioma", dt.getIdiomas)
-        End With
 
-        Return ht
-    End Function
     Public Function BuuscarUnUsuario(NombreUsuario As String) As Hashtable
         Dim ht As New Hashtable
         ht.Add("@NombreUsuario", NombreUsuario)
