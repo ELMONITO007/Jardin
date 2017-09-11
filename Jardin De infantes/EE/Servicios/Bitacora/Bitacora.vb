@@ -1,19 +1,35 @@
 ﻿Public Class Bitacora
-    Private Property _fecha As DateTime
-    Private Property _descripcion As EventoBitacora
+    Private Property fecha As DateTime
 
-    Sub New(unaFecha As DateTime, unEvento As EventoBitacora)
-        _fecha = unaFecha
-        _descripcion = unEvento
+    Private Property evento As EventoBitacora
+    Private Property usuario As Usuario
+    Private Property descripcion As String
+    Private Property digitoVerificadorHorizontal As String
+    Sub New()
 
+    End Sub
+    Sub New(unUsuario As Usuario, unaFecha As DateTime, unEvento As EventoBitacora, unaDescripcion As String, unDigitoVerificadorHorizontal As String)
+        fecha = unaFecha
+        descripcion = unaDescripcion
+        evento = unEvento
+        digitoVerificadorHorizontal = unDigitoVerificadorHorizontal
+        usuario = unUsuario
     End Sub
     Public Function getFecha() As DateTime
         Return _fecha
     End Function
     Public Function getDescripcion() As String
-        Return _descripcion.getDesripcion
-
+        Return descripcion
 
     End Function
+    Public Function getNombreUsuario() As String
+        Return usuario.getNombreUsuario
+    End Function
 
+    Public Function getEvento() As String
+        Return evento.getDesripcion
+    End Function
+    Public Function getDVH() As String
+        Return digitoVerificadorHorizontal
+    End Function
 End Class

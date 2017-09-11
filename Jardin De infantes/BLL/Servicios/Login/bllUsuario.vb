@@ -23,7 +23,14 @@ Public Class bllUsuario
 
     End Function
 
+    Public Function obtenerListaUsuario() As DataTable
+        Dim mpp As New mppUsuario
+        Dim DT As New DataTable
+        Dim dal As New dalUsurio(Of Usuario)
+        DT = dal.Leer("gu_ListarUsuarios")
+        Return DT
 
+    End Function
 
     Public Function VerificarUsuario(NombreUsuario As String) As Boolean
         Dim mpp As New mppUsuario
@@ -133,7 +140,7 @@ Public Class bllUsuario
                     Return True
                 Else
                     sessionManager.intance.Logout()
-
+                    Return False
                 End If
             Else
                 sessionManager.intance.Logout()

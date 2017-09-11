@@ -12,7 +12,10 @@
     Sub New()
 
     End Sub
-
+    Sub New(_nombreUsuario As String, _persona As Persona)
+        nombreUsuario = _nombreUsuario
+        persona = _persona
+    End Sub
     Sub New(_nombreUsuario As String, _contraseña As String, _intentosFallido As Integer, _logueado As Boolean, _digitoVerificadorH As String, _bloqueado As Boolean, _persona As Persona)
         nombreUsuario = _nombreUsuario
         contraseña = _contraseña

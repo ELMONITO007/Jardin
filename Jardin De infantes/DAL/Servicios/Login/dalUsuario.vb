@@ -133,11 +133,6 @@ Public Class dalUsurio(Of usuario)
 
             Return dt
 
-
-
-
-
-
         Catch ex As Exception
             db.RealizarRollBack()
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
@@ -175,4 +170,25 @@ Public Class dalUsurio(Of usuario)
         db.cerrarConexion()
     End Function
 
+    Public Function Leer(sp As String) As DataTable
+        Try
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandText = sp
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            db.RealizarCommit()
+
+            Return dt
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+            Return Nothing
+        End Try
+        db.cerrarConexion()
+    End Function
 End Class

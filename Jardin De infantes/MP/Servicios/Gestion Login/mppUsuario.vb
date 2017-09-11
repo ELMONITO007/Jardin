@@ -59,4 +59,15 @@ Public Class mppUsuario
         End With
         Return ht
     End Function
+
+    Public Function listarUsuario(dt As DataTable) As List(Of String)
+        Dim lista As New List(Of String)
+        For Each item As DataRow In dt.Rows
+
+            lista.Add(CStr(item("NombreUsuario")))
+        Next
+
+        Return lista
+    End Function
+
 End Class

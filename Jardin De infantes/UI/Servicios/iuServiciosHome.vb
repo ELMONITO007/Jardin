@@ -39,4 +39,10 @@ Public Class iuServiciosHome
         frm.ShowDialog()
         cambiaridioma()
     End Sub
+
+    Private Sub mtServicios_Click(sender As Object, e As EventArgs) Handles mtServicios.Click
+        Dim FRM As New iuBiatacora
+        FRM.ShowDialog()
+
+    End Sub
 End Class

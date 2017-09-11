@@ -62,3 +62,5 @@ C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuHOm
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuServiciosHome.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuIdioma.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuCambiarIdioma.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuBiatacora.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuBuscarUsuario.resources
