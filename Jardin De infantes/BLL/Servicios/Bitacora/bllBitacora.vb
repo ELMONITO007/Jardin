@@ -21,6 +21,7 @@ Public Class bllBitacora
             Return dal.Buscar(ht, "gb_VerBitacoraPorUsuario")
         Catch ex As Exception
             MsgBox("No selecciono ningun usuario", vbAbort, "Error")
+            Return Nothing
         End Try
 
 
@@ -42,4 +43,14 @@ Public Class bllBitacora
 
 
     End Function
+    Public Sub altaBitacora(unEvento As String, descripcion As String)
+        Dim unEventoBitacora As New EventoBitacora(unEvento)
+        Dim dal As New dalBitacora(Of Bitacora)
+        Dim mp As New mppBitacora
+        Dim ht As New Hashtable
+        Dim unaBItacora As New Bitacora(sessionManager.intance.getUsuario, DateTime.Now, unEventoBitacora, descripcion, "")
+        ht = mp.Agregar(unaBItacora)
+        dal.Escribir(ht, "gb_AltaBitacora")
+
+    End Sub
 End Class

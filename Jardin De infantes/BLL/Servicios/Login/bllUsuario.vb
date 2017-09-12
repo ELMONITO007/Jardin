@@ -115,10 +115,13 @@ Public Class bllUsuario
 
     End Sub
 
+
+
     Public Function VerificarCompletoUsuario(contraseña As String, nombreUsuario As String, idioma As String) As Boolean
         Dim existeusuario As Boolean = VerificarUsuario(nombreUsuario)
 
-
+        Dim unabllBitacora As New bllBitacora
+        Dim unaBitacora As Bitacora
 
 
 
@@ -139,6 +142,7 @@ Public Class bllUsuario
 
                     Return True
                 Else
+                    unabllBitacora.altaBitacora("Contraseña incorrecta", "Ha ingresado una contraseña erronea")
                     sessionManager.intance.Logout()
                     Return False
                 End If

@@ -8,8 +8,9 @@ Public Class mppBitacora
             .Add("@NombreUsuario", unaBitacora.getNombreUsuario)
             .Add("@Evento", unaBitacora.getEvento)
             .Add("@Fecha", unaBitacora.getFecha)
-            .Add("Fecha", unaBitacora.getFecha)
-            .Add("Descripcion", unaBitacora.getDescripcion)
+            .Add("@DigitoH", unaBitacora.getDVH)
+            .Add("@Descripcion", unaBitacora.getDescripcion)
+
         End With
 
         Return ht
