@@ -18,6 +18,7 @@ Public Class dalBitacora(Of bitacora)
 
     Public Function leer(sp As String) As DataTable
         Try
+
             Dim cmd As IDbCommand = db.CrearComando
             cmd.CommandType = CommandType.StoredProcedure
             cmd.CommandText = sp
@@ -34,12 +35,14 @@ Public Class dalBitacora(Of bitacora)
             MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Error al ver Idiomas")
             Return Nothing
         End Try
+
     End Function
 
 
 
     Public Sub Escribir(ht As Hashtable, sp As String)
         Try
+
             Dim cmd As SqlCommand = db.CrearComando
 
             cmd.CommandType = CommandType.StoredProcedure
@@ -48,9 +51,7 @@ Public Class dalBitacora(Of bitacora)
                 cmd.Parameters.AddWithValue(item, ht(item))
             Next
             cmd.ExecuteNonQuery()
-            Dim da As New SqlDataAdapter(cmd)
-            Dim dt As New DataTable
-            da.Fill(dt)
+
             db.RealizarCommit()
 
         Catch ex As Exception
@@ -58,11 +59,12 @@ Public Class dalBitacora(Of bitacora)
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
 
         End Try
-        db.cerrarConexion()
+
     End Sub
 
     Public Function Buscar(ht As Hashtable, sp As String) As DataTable
         Try
+
             Dim cmd As SqlCommand = db.CrearComando
 
             cmd.CommandType = CommandType.StoredProcedure
@@ -81,6 +83,9 @@ Public Class dalBitacora(Of bitacora)
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
             Return Nothing
         End Try
-        db.cerrarConexion()
+
     End Function
+
+
+
 End Class

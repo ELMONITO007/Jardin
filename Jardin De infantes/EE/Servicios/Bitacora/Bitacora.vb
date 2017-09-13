@@ -15,6 +15,9 @@
         digitoVerificadorHorizontal = unDigitoVerificadorHorizontal
         usuario = unUsuario
     End Sub
+    Public Sub modificarDVH(undvh As String)
+        digitoVerificadorHorizontal = undvh
+    End Sub
     Public Function getFecha() As DateTime
         Return _fecha
     End Function

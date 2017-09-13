@@ -6,9 +6,8 @@ Public Class mppBitacora
         Dim ht As New Hashtable
         With ht
             .Add("@NombreUsuario", unaBitacora.getNombreUsuario)
-            .Add("@Evento", unaBitacora.getEvento)
+            .Add("@EventoBitacora", unaBitacora.getEvento)
             .Add("@Fecha", unaBitacora.getFecha)
-            .Add("@DigitoH", unaBitacora.getDVH)
             .Add("@Descripcion", unaBitacora.getDescripcion)
 
         End With
@@ -34,6 +33,25 @@ Public Class mppBitacora
         Return ht
     End Function
 
+    Public Function AgregarDVH(unObjeto As Bitacora) As Hashtable
+        Dim ht As New Hashtable
+        With ht
+            .Add("@DVH", unObjeto.getDVH)
+            .Add("@Fecha", unObjeto.getFecha)
+
+        End With
+
+        Return ht
+    End Function
+    Public Function obtenerDatoDVH(unObjeto As Bitacora) As Hashtable
+        Dim ht As New Hashtable
+        With ht
+            .Add("@Fecha", unObjeto.getFecha)
+
+        End With
+
+        Return ht
+    End Function
     Public Function buscarPorUsuario(unObjeto As Bitacora) As Hashtable
         Dim ht As New Hashtable
         With ht
@@ -72,5 +90,13 @@ Public Class mppBitacora
 
         Next
         Return listaBitacora
+    End Function
+
+    Public Function obtenerString(dt As DataTable) As String
+        Dim resultado As String = ""
+        For Each item As DataRow In dt.Rows
+            resultado = CStr(item("Digito"))
+        Next
+        Return resultado
     End Function
 End Class

@@ -120,8 +120,8 @@ Public Class bllUsuario
     Public Function VerificarCompletoUsuario(contraseña As String, nombreUsuario As String, idioma As String) As Boolean
         Dim existeusuario As Boolean = VerificarUsuario(nombreUsuario)
 
-        Dim unabllBitacora As New bllBitacora
-        Dim unaBitacora As Bitacora
+        Dim unabllBitacora As bllBitacora
+
 
 
 
@@ -131,32 +131,32 @@ Public Class bllUsuario
             Exit Function
         Else
             Dim unUsuario As New Usuario(nombreUsuario)
-            Dim unIdioma As New Idioma(idioma)
 
-            ModificarDVH(unUsuario)
             sessionManager.intance.login(obtenerUsuario(nombreUsuario))
 
             If VerificarContraseña(contraseña) = True Then
+                unabllBitacora = New bllBitacora
+                unabllBitacora.altaBitacora("Login", "Se logueo Correctamente")
                 If verificarDVH(sessionManager.intance.getUsuario) = True Then
 
 
                     Return True
                 Else
-                    unabllBitacora.altaBitacora("Contraseña incorrecta", "Ha ingresado una contraseña erronea")
+                    unabllBitacora = New bllBitacora
+                    unabllBitacora.altaBitacora("Error Digito Verificador Vertical", "error en la consistencia de datos al loguearse")
+
                     sessionManager.intance.Logout()
                     Return False
                 End If
             Else
+                unabllBitacora = New bllBitacora
+                unabllBitacora.altaBitacora("Contraseña incorrecta", "Se ha ingresado mal la contraseña")
+                unabllBitacora.altaBitacora("Contraseña incorrecta", "Ha ingresado una contraseña erronea")
                 sessionManager.intance.Logout()
                 Return False
             End If
 
         End If
-        'If existeusuario = True And ContraseñaCorrecta = True And digitoVerificador = True Then
-        '    Return True
-        'Else
-        '    Return False
-        'End If
 
 
     End Function
