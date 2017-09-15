@@ -105,6 +105,12 @@
     <Compile Include="iuHOme.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Servicios\Backup\iuBackups.Designer.vb">
+      <DependentUpon>iuBackups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Backup\iuBackups.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Servicios\Bitacora\iuBiatacora.Designer.vb">
       <DependentUpon>iuBiatacora.vb</DependentUpon>
     </Compile>
@@ -160,6 +166,9 @@
   <ItemGroup>
     <EmbeddedResource Include="iuHOme.resx">
       <DependentUpon>iuHOme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Backup\iuBackups.resx">
+      <DependentUpon>iuBackups.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servicios\Bitacora\iuBiatacora.resx">
       <DependentUpon>iuBiatacora.vb</DependentUpon>

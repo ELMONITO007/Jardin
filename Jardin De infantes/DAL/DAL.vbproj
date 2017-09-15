@@ -83,6 +83,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Servicios\Backup\dalBackup.vb" />
     <Compile Include="Servicios\Bitacora\dalBitacora.vb" />
     <Compile Include="Servicios\Bitacora\dalEventoBitacora.vb" />
     <Compile Include="Servicios\DigitoVerificadorV\dalDigitoVerificadorV.vb" />
