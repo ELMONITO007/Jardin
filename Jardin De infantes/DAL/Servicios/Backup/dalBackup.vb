@@ -35,7 +35,7 @@ Public Class dalBackup
 
             Dim cmd As SqlCommand = db.CrearComando
 
-            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandType = CommandType.Text
             cmd.CommandText = cadena
 
             cmd.ExecuteNonQuery()
@@ -44,6 +44,28 @@ Public Class dalBackup
 
         Catch ex As Exception
             db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+
+        End Try
+
+    End Sub
+    Public Sub EscribirsinTran(cadena As String)
+        Try
+            Dim cadenas As String = "(ConfigurationManager.ConnectionStrings(" & "PC" & ").ConnectionString)"
+            Using cn As New SqlConnection(cadenas)
+                Dim cmd As New SqlCommand()
+                cmd.Connection = cn
+                cmd.CommandType = CommandType.Text
+                cmd.CommandText = cadena
+
+                cmd.ExecuteNonQuery()
+
+
+            End Using
+
+
+        Catch ex As Exception
+
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
 
         End Try

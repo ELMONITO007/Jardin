@@ -8,7 +8,7 @@ Public Class Conexion
     Private _transaccion As IDbTransaction
     Private _conexion As IDbConnection
     Public Sub New()
-        _conexion = New SqlConnection(ConfigurationManager.ConnectionStrings("Notebook").ConnectionString)
+        _conexion = New SqlConnection(ConfigurationManager.ConnectionStrings("PC").ConnectionString)
         _conexion.Open()
 
         _transaccion = _conexion.BeginTransaction()

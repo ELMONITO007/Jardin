@@ -3,13 +3,13 @@ Imports BLL
 Public Class iuBackups
     Private Sub btnCrearBackup_Click(sender As Object, e As EventArgs) Handles btnCrearBackup.Click
         Dim cadenaPath As String
-        Dim myFileDialog As New OpenFileDialog()
+        Dim myFileDialog As New FolderBrowserDialog()
         With myFileDialog
-            .Filter = "Excel Files |*.xlsx"
-            .Title = "Open File"
+
+
             .ShowDialog()
         End With
-        cadenaPath = myFileDialog.FileName.ToString
+        cadenaPath = myFileDialog.SelectedPath.ToString
         Dim unBakcup As New Backup(cadenaPath, DateTime.Now, "", txtnombreArchivo.Text)
         Dim bllback As New bllBackup
         bllback.altaBackup(unBakcup)

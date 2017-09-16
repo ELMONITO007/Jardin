@@ -45,4 +45,9 @@ Public Class iuServiciosHome
         FRM.ShowDialog()
 
     End Sub
+
+    Private Sub mtBackup_Click(sender As Object, e As EventArgs) Handles mtBackup.Click
+        Dim frm As New iuBackups
+        frm.ShowDialog()
+    End Sub
 End Class

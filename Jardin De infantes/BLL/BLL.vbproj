@@ -82,7 +82,7 @@
     <Compile Include="Servicios\Backup\bllBackup.vb" />
     <Compile Include="Servicios\Bitacora\bllBitacora.vb" />
     <Compile Include="Servicios\Bitacora\bllEventoBitacora.vb" />
-    <Compile Include="Servicios\bllDigitoVerificadorV.vb" />
+    <Compile Include="Servicios\Digito Verificador\bllDigitoVerificadorV.vb" />
     <Compile Include="Servicios\Idioma\bllIdioma.vb" />
     <Compile Include="Servicios\Idioma\bllTraduccion.vb" />
     <Compile Include="Servicios\Login\bllUsuario.vb" />

@@ -5,14 +5,16 @@ Public Class bllBackup
 
     Public Function listarTodo() As DataTable
         Dim dal As New dalBackup
-        Dim cadena As String = "select Path,NombreArchivo,Fecha,DigitoVerificadorH from dbo.Backups"
+        Dim cadena As String = "select Paths,NombreArchivo,Fecha,DigitoVerificadorH from dbo.BackupS"
         Return dal.Leer(cadena)
 
     End Function
 
     Public Function generarDigitoVerificador(unBackup As Backup) As String
         Dim dal As New dalBackup
-        Dim cadena As String = "select CONVERT(nvarchar(max),ID_Backup)+CONVERT (nvarchar(max),Fecha)+CONVERT(nvarchar(max),Path),convert(nvarchar(max),NombreArchivo) as DVH from backups where fecha=" & unBackup.getFecha
+        Dim fecha As DateTime = unBackup.getFecha
+        Dim strDate As String = fecha.ToString("dd-MM-yyyy HH:mm:ss")
+        Dim cadena As String = "select CONVERT(nvarchar(max),ID_Backup)+CONVERT (nvarchar(max),Fecha)+CONVERT(nvarchar(max),Paths),convert(nvarchar(max),NombreArchivo) as DVH from backups where fecha='" & strDate & "'"
         Dim dt As DataTable = dal.Leer(cadena)
         Dim mp As New mppBackup
         Dim generarDVH As New DigitoVerificadorH(mp.obtenerString(dt))
@@ -21,19 +23,21 @@ Public Class bllBackup
     End Function
     Public Sub altaBackup(unBackup As Backup)
         Dim dalALta As New dalBackup
-        Dim cadena As String = "insert into Backups(Fecha,Path,NombreArchivo)values (" & unBackup.getFecha & "," & unBackup.getPath & ")"
+        Dim fecha As DateTime = unBackup.getFecha
+        Dim strDate As String = fecha.ToString("dd-MM-yyyy HH:mm:ss")
+        Dim cadena As String = "insert into BackupS(Fecha,Paths,NombreArchivo)values ('" & strDate & "','" & unBackup.getPath & "','" & unBackup.getNombre & "')"
         dalALta.Escribir(cadena)
         Dim altaDVH As New dalBackup
-        Dim cadenaDVH As String = "insert into Backups(DigitoVerificadorH)values(" & generarDigitoVerificador(unBackup) & ")where fecha=" & unBackup.getFecha
-        altaDVH.Escribir(cadenaDVH)
+        'Dim cadenaDVH As String = "insert into BackupS(DigitoVerificadorH)values('" & generarDigitoVerificador(unBackup) & "')where fecha='" & strDate & "'"
+        'altaDVH.Escribir(cadenaDVH)
         crearBackup(unBackup)
     End Sub
 
     Public Sub crearBackup(unBackup As Backup)
         Try
             Dim dalALta As New dalBackup
-            Dim cadena As String = "backup database JardinInfantes to disk=" & unBackup.getPath & "\" & unBackup.getNombre & ".bak"
-            dalALta.Escribir(cadena)
+            Dim cadena As String = "backup database JardinInfantes to disk='" & unBackup.getPath & "\" & unBackup.getNombre & ".bak'"
+            dalALta.EscribirsinTran(cadena)
             Dim agregarBitacora As New bllBitacora
             agregarBitacora.altaBitacora("Generar Backup", "Se generar un Backup")
 

@@ -97,3 +97,4 @@ C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbp
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.exe
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.xml
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.pdb
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuBackups.resources
