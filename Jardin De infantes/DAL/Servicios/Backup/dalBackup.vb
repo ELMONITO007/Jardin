@@ -1,4 +1,5 @@
-﻿Imports System.Data.SqlClient
+﻿Imports System.Configuration
+Imports System.Data.SqlClient
 
 Public Class dalBackup
     Private db As Conexion
@@ -51,8 +52,10 @@ Public Class dalBackup
     End Sub
     Public Sub EscribirsinTran(cadena As String)
         Try
-            Dim cadenas As String = "(ConfigurationManager.ConnectionStrings(" & "PC" & ").ConnectionString)"
-            Using cn As New SqlConnection(cadenas)
+
+            Using cn As New SqlConnection(ConfigurationManager.ConnectionStrings("PC").ConnectionString)
+                cn.Open()
+
                 Dim cmd As New SqlCommand()
                 cmd.Connection = cn
                 cmd.CommandType = CommandType.Text

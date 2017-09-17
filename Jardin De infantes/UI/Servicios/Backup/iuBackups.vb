@@ -21,7 +21,7 @@ Public Class iuBackups
         Dim unBakcup As New bllBackup
         dgvBackup.DataSource = ""
         dgvBackup.DataSource = unBakcup.listarTodo
-
+        dgvBackup.Columns(3).Visible = False
 
     End Sub
 
@@ -61,5 +61,22 @@ Public Class iuBackups
 
             Next
         Next
+    End Sub
+
+    Private Sub dgvBackup_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvBackup.CellContentClick
+        If cbRecuperarBakup.Checked = True Then
+            txtnombreArchivo.Text = dgvBackup.CurrentRow.Cells(1).Value.ToString
+        End If
+
+    End Sub
+
+    Private Sub MetroCheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbRecuperarBakup.CheckedChanged
+        If cbRecuperarBakup.Checked = True Then
+            btnRestaurarBackup.Visible = True
+            dgvBackup.Visible = True
+        Else
+            btnRestaurarBackup.Visible = False
+            dgvBackup.Visible = False
+        End If
     End Sub
 End Class
