@@ -30,4 +30,11 @@
         Return apellido
 
     End Function
+    Public Function getDni() As Integer
+        Return dni
+    End Function
+    Public Function getLegajo() As Integer
+        Return legajo
+
+    End Function
 End Class

@@ -104,7 +104,7 @@ Partial Class iuBackups
         Me.btnRestaurarBackup.Name = "btnRestaurarBackup"
         Me.btnRestaurarBackup.Size = New System.Drawing.Size(189, 66)
         Me.btnRestaurarBackup.TabIndex = 106
-        Me.btnRestaurarBackup.Tag = "Restaurar Backup"
+        Me.btnRestaurarBackup.Tag = "Recuperar Backup"
         Me.btnRestaurarBackup.Text = "Restaurar Backup"
         Me.btnRestaurarBackup.UseSelectable = True
         Me.btnRestaurarBackup.Visible = False
@@ -126,10 +126,10 @@ Partial Class iuBackups
         '
         '
         Me.txtnombreArchivo.CustomButton.Image = Nothing
-        Me.txtnombreArchivo.CustomButton.Location = New System.Drawing.Point(339, 2)
+        Me.txtnombreArchivo.CustomButton.Location = New System.Drawing.Point(226, 1)
         Me.txtnombreArchivo.CustomButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtnombreArchivo.CustomButton.Name = ""
-        Me.txtnombreArchivo.CustomButton.Size = New System.Drawing.Size(50, 51)
+        Me.txtnombreArchivo.CustomButton.Size = New System.Drawing.Size(33, 33)
         Me.txtnombreArchivo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtnombreArchivo.CustomButton.TabIndex = 1
         Me.txtnombreArchivo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light

@@ -50,4 +50,10 @@ Public Class iuServiciosHome
         Dim frm As New iuBackups
         frm.ShowDialog()
     End Sub
+
+    Private Sub mtUsuario_Click(sender As Object, e As EventArgs) Handles mtUsuario.Click
+        Dim frm As New iuABM
+        frm.ShowDialog()
+
+    End Sub
 End Class

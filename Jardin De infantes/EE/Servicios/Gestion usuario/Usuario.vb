@@ -31,6 +31,9 @@
     Sub New(_nombreUsuario As String)
         nombreUsuario = _nombreUsuario
     End Sub
+    Public Sub setContraseña(unaContraseña As String)
+        contraseña = unaContraseña
+    End Sub
     Public Function getUsuario() As String
         Return nombreUsuario
     End Function

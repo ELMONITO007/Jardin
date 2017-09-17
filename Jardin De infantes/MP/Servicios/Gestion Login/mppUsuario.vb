@@ -3,15 +3,36 @@ Public Class mppUsuario
     Inherits MPP(Of Usuario)
 
     Public Overrides Function Agregar(unObjeto As Usuario) As Hashtable
+        Dim ht As New Hashtable
+        With ht
+            .Add("@NombreUsuario", unObjeto.getNombreUsuario)
+            .Add("@Contraseña", unObjeto.getCOntrasenia)
+            .Add("Legajo", unObjeto.getPersona.getLegajo)
+        End With
 
+        Return ht
     End Function
 
     Public Overrides Function Modificar(unObjeto As Usuario) As Hashtable
-        Throw New NotImplementedException()
+        Dim ht As New Hashtable
+        With ht
+            .Add("@NombreUsuario", unObjeto.getNombreUsuario)
+            .Add("@Contraseña", unObjeto.getCOntrasenia)
+
+        End With
+
+        Return ht
     End Function
 
     Public Overrides Function Eliminar(unObjeto As Usuario) As Hashtable
-        Throw New NotImplementedException()
+        Dim ht As New Hashtable
+        With ht
+            .Add("@NombreUsuario", unObjeto.getNombreUsuario)
+
+
+        End With
+
+        Return ht
     End Function
 
     Public Overrides Function Buscar(unObjeto As Usuario) As Hashtable

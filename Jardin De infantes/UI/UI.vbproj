@@ -99,6 +99,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Persona\iuPersona.Designer.vb">
+      <DependentUpon>iuPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Persona\iuPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\Adicionales\ManejoString.vb" />
+    <Compile Include="Servicios\Login\iuABM.Designer.vb">
+      <DependentUpon>iuABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Login\iuABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="iuHOme.Designer.vb">
       <DependentUpon>iuHOme.vb</DependentUpon>
     </Compile>
@@ -135,6 +148,12 @@
     <Compile Include="Servicios\iuServiciosHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Servicios\Login\iuABMPrincipal.Designer.vb">
+      <DependentUpon>iuABMPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Login\iuABMPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Servicios\Login\iuLogin.Designer.vb">
       <DependentUpon>iuLogin.vb</DependentUpon>
     </Compile>
@@ -164,6 +183,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Persona\iuPersona.resx">
+      <DependentUpon>iuPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Login\iuABM.resx">
+      <DependentUpon>iuABM.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="iuHOme.resx">
       <DependentUpon>iuHOme.vb</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Servicios\iuServiciosHome.resx">
       <DependentUpon>iuServiciosHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Login\iuABMPrincipal.resx">
+      <DependentUpon>iuABMPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servicios\Login\iuLogin.resx">
       <DependentUpon>iuLogin.vb</DependentUpon>

@@ -162,4 +162,62 @@ Public Class bllUsuario
     End Function
 
 
+    Public Function altaUsuario(unUsuario As Usuario) As Boolean
+        Dim existeusuario As Boolean = VerificarUsuario(unUsuario.getNombreUsuario)
+        If existeusuario = False Then
+            unUsuario.setContraseña(encriptarCOntraseña(unUsuario.getCOntrasenia))
+            Dim mpp As New mppUsuario
+            Dim dal As New dalUsurio(Of Usuario)
+            dal.IdatosCompleto_Agregar(mpp.Agregar(unUsuario), "gu_AltaUsuario")
+            ModificarDVH(unUsuario)
+
+
+            Return True
+        Else
+            Return False
+        End If
+
+
+    End Function
+
+
+    Public Function BajaUsuario(unUsuario As Usuario) As Boolean
+        Dim existeusuario As Boolean = VerificarUsuario(unUsuario.getNombreUsuario)
+
+        If existeusuario = True Then
+
+            Dim mpp As New mppUsuario
+            Dim dal As New dalUsurio(Of Usuario)
+            dal.IdatosCompleto_Modificar(mpp.Eliminar(unUsuario), "gu_EliminarUsuario")
+            ModificarDVH(unUsuario)
+
+            Dim unaBitacora As New bllBitacora()
+            unaBitacora.altaBitacora("Baja Usuario", "Se dio de baja")
+
+            Return True
+        Else
+            Return False
+        End If
+
+    End Function
+
+    Public Function ModificarUsuario(unUsuario As Usuario) As Boolean
+        Dim existeusuario As Boolean = VerificarUsuario(unUsuario.getNombreUsuario)
+
+        If existeusuario = True Then
+            unUsuario.setContraseña(encriptarCOntraseña(unUsuario.getCOntrasenia))
+            Dim mpp As New mppUsuario
+            Dim dal As New dalUsurio(Of Usuario)
+            dal.IdatosCompleto_Modificar(mpp.Modificar(unUsuario), "gu_ModificarUsuario")
+            ModificarDVH(unUsuario)
+
+            Dim unaBitacora As New bllBitacora()
+            unaBitacora.altaBitacora("Modificar Usuario", "Se Modifico")
+            Return True
+        Else
+            Return False
+        End If
+
+    End Function
+
 End Class

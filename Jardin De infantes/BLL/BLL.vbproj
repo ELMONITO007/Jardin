@@ -63,6 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bllABM.vb" />
     <Compile Include="bllEventoBitacora.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -79,6 +80,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Persona\bllPersona.vb" />
     <Compile Include="Servicios\Backup\bllBackup.vb" />
     <Compile Include="Servicios\Bitacora\bllBitacora.vb" />
     <Compile Include="Servicios\Bitacora\bllEventoBitacora.vb" />

@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bllABM.vb" />
     <Compile Include="Conexion.vb" />
     <Compile Include="DAL.vb" />
     <Compile Include="Interfaces\IDatosBuscarAltaBuscarConRef.vb" />
@@ -83,6 +84,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Persona\dalPersona.vb" />
     <Compile Include="Servicios\Backup\dalBackup.vb" />
     <Compile Include="Servicios\Bitacora\dalBitacora.vb" />
     <Compile Include="Servicios\Bitacora\dalEventoBitacora.vb" />
