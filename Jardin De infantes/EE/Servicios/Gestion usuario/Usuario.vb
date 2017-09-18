@@ -5,7 +5,7 @@
     Private Property logueado As Boolean
     Private Property digitoVerificadorH As String
     Private Property bloqueado As Boolean
-
+    Private Property habilitado As Boolean
     Private Property persona As Persona
 
 
@@ -16,14 +16,14 @@
         nombreUsuario = _nombreUsuario
         persona = _persona
     End Sub
-    Sub New(_nombreUsuario As String, _contraseña As String, _intentosFallido As Integer, _logueado As Boolean, _digitoVerificadorH As String, _bloqueado As Boolean, _persona As Persona)
+    Sub New(_nombreUsuario As String, _contraseña As String, _intentosFallido As Integer, _logueado As Boolean, _digitoVerificadorH As String, _bloqueado As Boolean, _persona As Persona, _habilitado As Boolean)
         nombreUsuario = _nombreUsuario
         contraseña = _contraseña
         intentosFallido = _intentosFallido
         logueado = _logueado
         digitoVerificadorH = _digitoVerificadorH
         bloqueado = _bloqueado
-
+        habilitado = _habilitado
         persona = _persona
     End Sub
 
@@ -62,5 +62,8 @@
     End Function
     Public Function getNombreUsuario() As String
         Return nombreUsuario
+    End Function
+    Public Function getHabilitado() As Boolean
+        Return habilitado
     End Function
 End Class

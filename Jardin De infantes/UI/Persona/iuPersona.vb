@@ -12,6 +12,8 @@ Public Class iuPersona
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Dim unaPersona As New Persona(dgvTodosLosusuario.CurrentRow.Cells(0).Value.ToString, dgvTodosLosusuario.CurrentRow.Cells(1).Value.ToString, dgvTodosLosusuario.CurrentRow.Cells(2).Value.ToString, dgvTodosLosusuario.CurrentRow.Cells(3).Value.ToString, dgvTodosLosusuario.CurrentRow.Cells(4).Value.ToString, dgvTodosLosusuario.CurrentRow.Cells(5).Value.ToString)
         iuABM.unaPersona = unaPersona
+        Me.Close()
+
     End Sub
     Sub cambiaridioma()
 

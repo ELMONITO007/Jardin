@@ -6,7 +6,7 @@ Public Class iuBuscarUsuario
         Dim unbll As New bllUsuario
         dgvTodosLosusuario.DataSource = ""
         dgvTodosLosusuario.DataSource = unbll.obtenerListaUsuario
-        iuBiatacora.text = dgvTodosLosusuario.CurrentRow.Cells(0).Value.ToString
+
     End Sub
     Sub cambiaridioma()
 
@@ -35,5 +35,10 @@ Public Class iuBuscarUsuario
     End Sub
     Private Sub iuBuscarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cambiaridioma()
+    End Sub
+
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        iuBiatacora.texto = dgvTodosLosusuario.CurrentRow.Cells(0).Value.ToString
+        Me.Close()
     End Sub
 End Class

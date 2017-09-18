@@ -1,6 +1,7 @@
 ﻿Imports BLL
 Imports EE
 
+
 Public Class iuABM
     Public Shared legajo As Integer
     Public Shared unaPersona As New Persona
@@ -55,6 +56,84 @@ Public Class iuABM
     End Sub
 
     Private Sub btnAlta_Click(sender As Object, e As EventArgs) Handles btnAlta.Click
+        Try
+            Dim unUsuario As New Usuario(txtUsuario.Text, txtContraseña.Text, 0, 0, "", 0, unaPersona, 1)
+            Dim bll As New bllUsuario
+            Dim resultado As Boolean = bll.altaUsuario(unUsuario)
+            If resultado = True Then
+                MsgBox("Se dio de alta correctamente el usuario: " & unUsuario.getNombreUsuario, vbInformation, "Alta usuario")
+            Else
+                MsgBox("El usuario " & unUsuario.getNombreUsuario & "ya existe", vbCritical, "Alta Usuario")
+            End If
+            llenarGrilla()
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+    End Sub
+
+    Private Sub btnBaja_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btnModificat_Click(sender As Object, e As EventArgs) Handles btnModificat.Click
+        Try
+            Dim unUsuario As New Usuario(txtUsuario.Text, txtContraseña.Text, 0, 0, "", 0, unaPersona, 1)
+            Dim bll As New bllUsuario
+
+            Dim resultados As Integer = MsgBox("Desea modificar el usuario: " & unUsuario.getNombreUsuario, vbYesNo, "Importante")
+            If resultados = vbYes Then
+
+
+                Dim resultado As Boolean = bll.ModificarUsuario(unUsuario)
+                If resultado = True Then
+                    MsgBox("Se modifico correctamente el usuario: " & unUsuario.getNombreUsuario, vbInformation, "Modificar usuario")
+                Else
+                    MsgBox("El usuario " & unUsuario.getNombreUsuario & "no existe", vbCritical, "Modificar Usuario")
+
+                End If
+            Else
+
+                MsgBox("Se cancelo la baja", vbInformation, "Modificar Usuario")
+            End If
+
+
+            llenarGrilla()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnBaja_Click_1(sender As Object, e As EventArgs) Handles btnBaja.Click
+        Try
+            Dim unUsuario As New Usuario(txtUsuario.Text, txtContraseña.Text, 0, 0, "", 0, unaPersona, 1)
+            Dim bll As New bllUsuario
+
+            Dim resultados As Integer = MsgBox("Desea dar de baja el usuario:" & unUsuario.getNombreUsuario, vbYesNo, "Importante")
+            If resultados = vbYes Then
+
+
+                Dim resultado As Boolean = bll.BajaUsuario(unUsuario)
+                If resultado = True Then
+                    MsgBox("Se dio de baja correctamente el usuario: " & unUsuario.getNombreUsuario, vbInformation, "Baja usuario")
+                Else
+                    MsgBox("El usuario " & unUsuario.getNombreUsuario & "no existe", vbCritical, "Baja Usuario")
+
+                End If
+            Else
+
+                MsgBox("Se cancelo la baja", vbInformation, "Baja Usuario")
+            End If
+
+
+            llenarGrilla()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

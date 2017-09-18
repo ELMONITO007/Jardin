@@ -52,7 +52,7 @@ Public Class iuServiciosHome
     End Sub
 
     Private Sub mtUsuario_Click(sender As Object, e As EventArgs) Handles mtUsuario.Click
-        Dim frm As New iuABM
+        Dim frm As New iuABMPrincipal
         frm.ShowDialog()
 
     End Sub

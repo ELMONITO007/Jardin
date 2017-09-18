@@ -10,7 +10,7 @@ Public Class iuBiatacora
 
 
     End Sub
-    Public Shared text As String
+    Public Shared texto As String
 
 
 
@@ -19,7 +19,7 @@ Public Class iuBiatacora
         frmBuscar.ShowDialog()
         Dim unabll As New bllBitacora
         dgvPorUsuario.DataSource = ""
-        dgvPorUsuario.DataSource = unabll.listarPorUsuario(text)
+        dgvPorUsuario.DataSource = unabll.listarPorUsuario(texto)
     End Sub
 
 

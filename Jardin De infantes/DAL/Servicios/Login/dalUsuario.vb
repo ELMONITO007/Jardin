@@ -22,8 +22,7 @@ Public Class dalUsurio(Of usuario)
             Next
             cmd.ExecuteNonQuery()
             Dim da As New SqlDataAdapter(cmd)
-            Dim dt As New DataTable
-            da.Fill(dt)
+
             db.RealizarCommit()
 
         Catch ex As Exception
@@ -46,9 +45,7 @@ Public Class dalUsurio(Of usuario)
             Next
             cmd.ExecuteNonQuery()
             Dim da As New SqlDataAdapter(cmd)
-            Dim dt As New DataTable
-            da.Fill(dt)
-            db.RealizarCommit()
+
 
         Catch ex As Exception
             db.RealizarRollBack()

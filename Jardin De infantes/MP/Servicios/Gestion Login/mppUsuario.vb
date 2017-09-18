@@ -7,7 +7,7 @@ Public Class mppUsuario
         With ht
             .Add("@NombreUsuario", unObjeto.getNombreUsuario)
             .Add("@Contraseña", unObjeto.getCOntrasenia)
-            .Add("Legajo", unObjeto.getPersona.getLegajo)
+            .Add("@Legajo", unObjeto.getPersona.getLegajo)
         End With
 
         Return ht
@@ -50,7 +50,7 @@ Public Class mppUsuario
 
 
             Dim empleado As New Persona(CStr(item("nombre")), CStr(item("nombre")))
-            Dim unUsuario = New Usuario(CStr(item("NombreUsuario")), CStr(item("Contraseña")), Integer.Parse(item("IntentosFallidos")), Boolean.Parse(item("Logueado")), CStr(item("DigitoVerificadorH")), Boolean.Parse(item("bloqueado")), empleado)
+            Dim unUsuario = New Usuario(CStr(item("NombreUsuario")), CStr(item("Contraseña")), Integer.Parse(item("IntentosFallidos")), Boolean.Parse(item("Logueado")), CStr(item("DigitoVerificadorH")), Boolean.Parse(item("bloqueado")), empleado, Boolean.Parse(item("habilitado")))
             lista.Add(unUsuario)
         Next
         Return lista

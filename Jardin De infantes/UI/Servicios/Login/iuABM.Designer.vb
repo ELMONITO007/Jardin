@@ -22,20 +22,20 @@ Partial Class iuABM
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtLegajo = New MetroFramework.Controls.MetroTextBox()
         Me.lblPersona = New MetroFramework.Controls.MetroLabel()
         Me.dgvABMUsuario = New MetroFramework.Controls.MetroGrid()
         Me.btnAlta = New MetroFramework.Controls.MetroButton()
-        Me.btnBaja = New MetroFramework.Controls.MetroButton()
         Me.btnModificat = New MetroFramework.Controls.MetroButton()
         Me.txtUsuario = New MetroFramework.Controls.MetroTextBox()
         Me.lblUsuario = New MetroFramework.Controls.MetroLabel()
         Me.txtContraseña = New MetroFramework.Controls.MetroTextBox()
         Me.lblContraseña = New MetroFramework.Controls.MetroLabel()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.btnBaja = New MetroFramework.Controls.MetroButton()
         CType(Me.dgvABMUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,67 +87,60 @@ Partial Class iuABM
         Me.dgvABMUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvABMUsuario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.dgvABMUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvABMUsuario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvABMUsuario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvABMUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer))
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvABMUsuario.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvABMUsuario.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvABMUsuario.EnableHeadersVisualStyles = False
         Me.dgvABMUsuario.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.dgvABMUsuario.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgvABMUsuario.Location = New System.Drawing.Point(486, 148)
+        Me.dgvABMUsuario.Location = New System.Drawing.Point(420, 148)
         Me.dgvABMUsuario.Name = "dgvABMUsuario"
         Me.dgvABMUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvABMUsuario.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvABMUsuario.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvABMUsuario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgvABMUsuario.RowTemplate.Height = 28
         Me.dgvABMUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvABMUsuario.Size = New System.Drawing.Size(367, 277)
+        Me.dgvABMUsuario.Size = New System.Drawing.Size(220, 277)
         Me.dgvABMUsuario.TabIndex = 20
         '
         'btnAlta
         '
-        Me.btnAlta.Location = New System.Drawing.Point(59, 49)
+        Me.btnAlta.Location = New System.Drawing.Point(272, 75)
         Me.btnAlta.Name = "btnAlta"
         Me.btnAlta.Size = New System.Drawing.Size(108, 54)
         Me.btnAlta.TabIndex = 17
+        Me.btnAlta.Tag = "Alta"
         Me.btnAlta.Text = "Alta"
         Me.btnAlta.UseSelectable = True
         '
-        'btnBaja
-        '
-        Me.btnBaja.Location = New System.Drawing.Point(224, 49)
-        Me.btnBaja.Name = "btnBaja"
-        Me.btnBaja.Size = New System.Drawing.Size(108, 54)
-        Me.btnBaja.TabIndex = 23
-        Me.btnBaja.Text = "Baja"
-        Me.btnBaja.UseSelectable = True
-        '
         'btnModificat
         '
-        Me.btnModificat.Location = New System.Drawing.Point(390, 49)
+        Me.btnModificat.Location = New System.Drawing.Point(272, 75)
         Me.btnModificat.Name = "btnModificat"
         Me.btnModificat.Size = New System.Drawing.Size(108, 54)
         Me.btnModificat.TabIndex = 24
+        Me.btnModificat.Tag = "Modificar"
         Me.btnModificat.Text = "Modificar"
         Me.btnModificat.UseSelectable = True
         '
@@ -167,7 +160,7 @@ Partial Class iuABM
         Me.txtUsuario.CustomButton.Visible = False
         Me.txtUsuario.Enabled = False
         Me.txtUsuario.Lines = New String(-1) {}
-        Me.txtUsuario.Location = New System.Drawing.Point(126, 214)
+        Me.txtUsuario.Location = New System.Drawing.Point(126, 228)
         Me.txtUsuario.MaxLength = 32767
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -185,7 +178,7 @@ Partial Class iuABM
         'lblUsuario
         '
         Me.lblUsuario.AutoSize = True
-        Me.lblUsuario.Location = New System.Drawing.Point(12, 218)
+        Me.lblUsuario.Location = New System.Drawing.Point(12, 232)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(53, 19)
         Me.lblUsuario.TabIndex = 25
@@ -207,7 +200,7 @@ Partial Class iuABM
         Me.txtContraseña.CustomButton.UseSelectable = True
         Me.txtContraseña.CustomButton.Visible = False
         Me.txtContraseña.Lines = New String(-1) {}
-        Me.txtContraseña.Location = New System.Drawing.Point(126, 259)
+        Me.txtContraseña.Location = New System.Drawing.Point(126, 281)
         Me.txtContraseña.MaxLength = 32767
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -225,7 +218,7 @@ Partial Class iuABM
         'lblContraseña
         '
         Me.lblContraseña.AutoSize = True
-        Me.lblContraseña.Location = New System.Drawing.Point(12, 263)
+        Me.lblContraseña.Location = New System.Drawing.Point(12, 285)
         Me.lblContraseña.Name = "lblContraseña"
         Me.lblContraseña.Size = New System.Drawing.Size(75, 19)
         Me.lblContraseña.TabIndex = 27
@@ -242,23 +235,34 @@ Partial Class iuABM
         Me.MetroButton1.Text = "Buscar"
         Me.MetroButton1.UseSelectable = True
         '
+        'btnBaja
+        '
+        Me.btnBaja.Location = New System.Drawing.Point(272, 75)
+        Me.btnBaja.Name = "btnBaja"
+        Me.btnBaja.Size = New System.Drawing.Size(108, 54)
+        Me.btnBaja.TabIndex = 30
+        Me.btnBaja.Tag = "Baja"
+        Me.btnBaja.Text = "Baja"
+        Me.btnBaja.UseSelectable = True
+        '
         'iuABM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(890, 448)
+        Me.ClientSize = New System.Drawing.Size(659, 448)
+        Me.Controls.Add(Me.btnBaja)
         Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.txtContraseña)
         Me.Controls.Add(Me.lblContraseña)
         Me.Controls.Add(Me.txtUsuario)
         Me.Controls.Add(Me.lblUsuario)
         Me.Controls.Add(Me.btnModificat)
-        Me.Controls.Add(Me.btnBaja)
         Me.Controls.Add(Me.txtLegajo)
         Me.Controls.Add(Me.lblPersona)
         Me.Controls.Add(Me.dgvABMUsuario)
         Me.Controls.Add(Me.btnAlta)
         Me.Name = "iuABM"
+        Me.Tag = "Legajo"
         CType(Me.dgvABMUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -269,11 +273,11 @@ Partial Class iuABM
     Friend WithEvents lblPersona As MetroFramework.Controls.MetroLabel
     Friend WithEvents dgvABMUsuario As MetroFramework.Controls.MetroGrid
     Friend WithEvents btnAlta As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnBaja As MetroFramework.Controls.MetroButton
     Friend WithEvents btnModificat As MetroFramework.Controls.MetroButton
     Friend WithEvents txtUsuario As MetroFramework.Controls.MetroTextBox
     Friend WithEvents lblUsuario As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtContraseña As MetroFramework.Controls.MetroTextBox
     Friend WithEvents lblContraseña As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnBaja As MetroFramework.Controls.MetroButton
 End Class

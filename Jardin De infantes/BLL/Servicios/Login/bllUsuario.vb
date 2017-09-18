@@ -101,15 +101,20 @@ Public Class bllUsuario
 
     End Function
     Public Sub ModificarDVH(unUsuario As Usuario)
-        Dim ValorAHashear As String = obtenerDatoDVH(unUsuario)
-        Dim dal As New dalUsurio(Of Usuario)
-        Dim ht As New Hashtable
-        Dim mpp As New mppUsuario
-        Dim encriptar As New EncriptarSHA5(ValorAHashear)
-        unUsuario.ModificarDVH(encriptar.Hashear)
+        Try
+            Dim ValorAHashear As String = obtenerDatoDVH(unUsuario)
+            Dim dal As New dalUsurio(Of Usuario)
+            Dim ht As New Hashtable
+            Dim mpp As New mppUsuario
+            Dim encriptar As New EncriptarSHA5(ValorAHashear)
+            unUsuario.ModificarDVH(encriptar.Hashear)
 
-        ht = mpp.ModificarDVH(unUsuario)
-        dal.IdatosCompleto_Modificar(ht, "dv_ModificarDVH")
+            ht = mpp.ModificarDVH(unUsuario)
+            dal.IdatosCompleto_Modificar(ht, "dv_ModificarDVH")
+        Catch ex As Exception
+            MsgBox(ex.Message,, "Error")
+        End Try
+
 
 
 
@@ -130,9 +135,34 @@ Public Class bllUsuario
             Return False
             Exit Function
         Else
+
             Dim unUsuario As New Usuario(nombreUsuario)
 
             sessionManager.intance.login(obtenerUsuario(nombreUsuario))
+
+            If sessionManager.intance.getUsuario.getHabilitado = True Then
+                If VerificarContraseña(contraseña) = True Then
+                    unabllBitacora = New bllBitacora
+                    unabllBitacora.altaBitacora("Login", "Se logueo Correctamente")
+                    If verificarDVH(sessionManager.intance.getUsuario) = True Then
+
+
+                        Return True
+                    Else
+                        unabllBitacora = New bllBitacora
+                        unabllBitacora.altaBitacora("Error Digito Verificador Horizontal", "error en la consistencia de datos al loguearse")
+
+                        sessionManager.intance.Logout()
+                        Return False
+                    End If
+                Else
+                    unabllBitacora = New bllBitacora
+                    unabllBitacora.altaBitacora("Contraseña incorrecta", "Se ha ingresado mal la contraseña")
+                    unabllBitacora.altaBitacora("Contraseña incorrecta", "Ha ingresado una contraseña erronea")
+                    sessionManager.intance.Logout()
+                    Return False
+                End If
+            End If
 
             If VerificarContraseña(contraseña) = True Then
                 unabllBitacora = New bllBitacora
@@ -143,7 +173,7 @@ Public Class bllUsuario
                     Return True
                 Else
                     unabllBitacora = New bllBitacora
-                    unabllBitacora.altaBitacora("Error Digito Verificador Vertical", "error en la consistencia de datos al loguearse")
+                    unabllBitacora.altaBitacora("Error Digito Verificador Horizontal", "error en la consistencia de datos al loguearse")
 
                     sessionManager.intance.Logout()
                     Return False
@@ -188,8 +218,8 @@ Public Class bllUsuario
 
             Dim mpp As New mppUsuario
             Dim dal As New dalUsurio(Of Usuario)
-            dal.IdatosCompleto_Modificar(mpp.Eliminar(unUsuario), "gu_EliminarUsuario")
-            ModificarDVH(unUsuario)
+            dal.IdatosCompleto_Eliminar(mpp.Eliminar(unUsuario), "gu_EliminarUsuario")
+
 
             Dim unaBitacora As New bllBitacora()
             unaBitacora.altaBitacora("Baja Usuario", "Se dio de baja")
@@ -203,20 +233,24 @@ Public Class bllUsuario
 
     Public Function ModificarUsuario(unUsuario As Usuario) As Boolean
         Dim existeusuario As Boolean = VerificarUsuario(unUsuario.getNombreUsuario)
+        Try
+            If existeusuario = True Then
+                unUsuario.setContraseña(encriptarCOntraseña(unUsuario.getCOntrasenia))
+                Dim mpp As New mppUsuario
+                Dim unadal As New dalUsurio(Of Usuario)
+                unadal.IdatosCompleto_Modificar(mpp.Modificar(unUsuario), "gu_ModificarUsuario")
+                ModificarDVH(unUsuario)
 
-        If existeusuario = True Then
-            unUsuario.setContraseña(encriptarCOntraseña(unUsuario.getCOntrasenia))
-            Dim mpp As New mppUsuario
-            Dim dal As New dalUsurio(Of Usuario)
-            dal.IdatosCompleto_Modificar(mpp.Modificar(unUsuario), "gu_ModificarUsuario")
-            ModificarDVH(unUsuario)
+                Dim unaBitacora As New bllBitacora()
+                unaBitacora.altaBitacora("Modificar Usuario", "Se Modifico")
+                Return True
+            Else
+                Return False
+            End If
 
-            Dim unaBitacora As New bllBitacora()
-            unaBitacora.altaBitacora("Modificar Usuario", "Se Modifico")
-            Return True
-        Else
-            Return False
-        End If
+        Catch ex As Exception
+            MsgBox(ex.Message,, "Error")
+        End Try
 
     End Function
 
