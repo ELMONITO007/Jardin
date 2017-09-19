@@ -1,6 +1,9 @@
 ﻿Imports BLL
 Imports EE
 
+Imports System.Globalization
+Imports System.Threading
+
 Public Class iuIdioma
 
     Sub cambiaridioma()
@@ -27,6 +30,9 @@ Public Class iuIdioma
 
             Next
         Next
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
     End Sub
     Private Sub mtCambiarIdioma_Click(sender As Object, e As EventArgs) Handles mtCambiarIdioma.Click
         Dim unIdioma As New iuCambiarIdioma
@@ -37,6 +43,8 @@ Public Class iuIdioma
     End Sub
 
     Private Sub mtAgregarIdioma_Click(sender As Object, e As EventArgs) Handles mtAgregarIdioma.Click
+        Dim frm As New iuAltaIdioma
+        frm.ShowDialog()
 
     End Sub
 

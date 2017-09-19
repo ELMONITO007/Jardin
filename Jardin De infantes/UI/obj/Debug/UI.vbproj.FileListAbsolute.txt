@@ -101,3 +101,4 @@ C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuBac
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuABM.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuPersona.resources
 C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuABMPrincipal.resources
+C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuAltaIdioma.resources

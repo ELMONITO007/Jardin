@@ -1,5 +1,7 @@
 ﻿Imports BLL
 Imports EE
+Imports System.Globalization
+Imports System.Threading
 
 Public Class iuServiciosHome
 
@@ -23,11 +25,12 @@ Public Class iuServiciosHome
                 End If
 
 
-
-
-
             Next
         Next
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
+
     End Sub
     Private Sub iuServiciosHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cambiaridioma()

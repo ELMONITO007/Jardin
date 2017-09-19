@@ -23,22 +23,32 @@ Public Class bllIdioma
     End Function
 
 
-    Public Function UsuarioIdioma(unUsuario As Usuario) As Idioma
-        Dim mpp As New mppUsuario
-        Dim ht As New Hashtable
-        Dim dalIdioma As New dalUsurio(Of Usuario)
-        Dim ListaIdioma As New List(Of Idioma)
-        ht = mpp.Buscar(unUsuario)
-        ListaIdioma = dalIdioma.IdatosCompleto_BuscarIdioma(ht)
-        Dim item As New Idioma
+    Public Function VerificarIdioma(unIdioma As Idioma) As Boolean
+        Dim lista As New List(Of String)
+        lista = listaIdiomaString()
+        Dim resultado As Boolean = True
+        For Each item As String In lista
+            If item = unIdioma.getIdioma Then
 
-        For Each item In ListaIdioma
-            item = ListaIdioma.Item(0)
-
+                resultado = False
+                Exit For
+            End If
         Next
-        Return item
+        Return resultado
 
+    End Function
 
+    Public Function AltaIdioma(unIdioma As Idioma) As Boolean
+        If VerificarIdioma(unIdioma) = True Then
+
+            Dim dll As New dalIdioma
+            Dim cadena As String = "insert into Idioma(Idioma)values('" & unIdioma.getIdioma & "')"
+            dll.Escribir(cadena)
+
+            Return True
+        Else
+            Return False
+        End If
 
 
 

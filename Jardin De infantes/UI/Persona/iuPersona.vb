@@ -1,5 +1,7 @@
 ﻿Imports BLL
 Imports EE
+Imports System.Globalization
+Imports System.Threading
 Public Class iuPersona
 
     Private Sub btnVerTodo_Click(sender As Object, e As EventArgs) Handles btnVerTodo.Click
@@ -35,6 +37,9 @@ Public Class iuPersona
 
 
 
+                Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+                Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+                Threading.Thread.CurrentThread.CurrentCulture = culturaObj
 
 
             Next

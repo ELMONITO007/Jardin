@@ -1,6 +1,11 @@
 ﻿Imports BLL
 Imports EE
 Imports MetroFramework
+
+Imports System.Globalization
+Imports System.Threading
+
+
 Public Class iuLogin
     Dim idioma As String
 
@@ -30,11 +35,21 @@ Public Class iuLogin
 
             Next
         Next
+
+
+
+    End Sub
+    Sub CambiarCultura()
+
+        Dim culturaObj As CultureInfo = New CultureInfo(txtIdioma.Text)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
     End Sub
     Private Sub iuLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim unBll As New bllIdioma
         txtIdioma.DataSource = unBll.listaIdiomaString
-
+        cambiaIdiomaForm()
+        CambiarCultura()
 
 
 
@@ -44,6 +59,8 @@ Public Class iuLogin
 
     Private Sub txtIdioma_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtIdioma.SelectedIndexChanged
         cambiaIdiomaForm()
+        CambiarCultura()
+
     End Sub
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
@@ -77,4 +94,5 @@ Public Class iuLogin
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
         Me.Close()
     End Sub
+
 End Class

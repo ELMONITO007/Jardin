@@ -2,7 +2,6 @@
 Imports System.Data.SqlClient
 Imports MP
 Public Class dalIdioma
-    Inherits DAL(Of Idioma)
 
     Private db As Conexion
     Private _cmd As IDbCommand
@@ -11,21 +10,29 @@ Public Class dalIdioma
         db = New Conexion
 
     End Sub
+    Public Sub Escribir(cadena As String)
+        Try
 
-    Public Overrides Sub IdatosCompleto_Modificar(HT As Hashtable, sp As String)
-        Throw New NotImplementedException()
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = cadena
+
+            cmd.ExecuteNonQuery()
+
+            db.RealizarCommit()
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+
+        End Try
+
     End Sub
 
-    Public Overrides Sub IdatosCompleto_Eliminar(HT As Hashtable, sp As String)
-        Throw New NotImplementedException()
-    End Sub
-
-    Public Overrides Sub IdatosCompleto_Agregar(HT As Hashtable, sp As String)
-        Throw New NotImplementedException()
-    End Sub
 
 
-    Public Overrides Function IdatosCompleto_Listar() As List(Of Idioma)
+    Public Function IdatosCompleto_Listar() As List(Of Idioma)
 
         Try
             Dim cmd As IDbCommand = db.CrearComando
@@ -46,7 +53,5 @@ Public Class dalIdioma
         End Try
     End Function
 
-    Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of Idioma)
-        Throw New NotImplementedException()
-    End Function
+
 End Class

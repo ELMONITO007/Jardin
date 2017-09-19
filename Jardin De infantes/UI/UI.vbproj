@@ -106,6 +106,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Servicios\Adicionales\ManejoString.vb" />
+    <Compile Include="Servicios\Idioma\iuAltaIdioma.Designer.vb">
+      <DependentUpon>iuAltaIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Idioma\iuAltaIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Servicios\Login\iuABM.Designer.vb">
       <DependentUpon>iuABM.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Persona\iuPersona.resx">
       <DependentUpon>iuPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\Idioma\iuAltaIdioma.resx">
+      <DependentUpon>iuAltaIdioma.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servicios\Login\iuABM.resx">
       <DependentUpon>iuABM.vb</DependentUpon>

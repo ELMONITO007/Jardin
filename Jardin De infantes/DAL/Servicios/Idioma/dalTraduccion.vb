@@ -56,4 +56,24 @@ Public Class dalTraduccion(Of Traduccion)
     Public Overrides Function IdatosCompleto_Buscar(HT As Hashtable, sp As String) As List(Of Traduccion)
         Throw New NotImplementedException()
     End Function
+
+    Public Sub Escribir(cadena As String)
+        Try
+
+            Dim cmd As SqlCommand = db.CrearComando
+
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = cadena
+
+            cmd.ExecuteNonQuery()
+
+            db.RealizarCommit()
+
+        Catch ex As Exception
+            db.RealizarRollBack()
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error")
+
+        End Try
+
+    End Sub
 End Class

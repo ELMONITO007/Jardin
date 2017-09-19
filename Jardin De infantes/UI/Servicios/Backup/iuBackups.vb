@@ -1,5 +1,10 @@
 ﻿Imports EE
 Imports BLL
+
+Imports System.Globalization
+Imports System.Threading
+
+
 Public Class iuBackups
     Private Sub btnCrearBackup_Click(sender As Object, e As EventArgs) Handles btnCrearBackup.Click
         Dim cadenaPath As String
@@ -61,6 +66,11 @@ Public Class iuBackups
 
             Next
         Next
+
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
+
     End Sub
 
     Private Sub dgvBackup_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvBackup.CellContentClick

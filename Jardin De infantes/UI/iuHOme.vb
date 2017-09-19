@@ -1,5 +1,9 @@
 ﻿Imports BLL
 Imports EE
+
+Imports System.Globalization
+Imports System.Threading
+
 Public Class iuHOme
     Sub cambiaridioma()
 
@@ -25,6 +29,10 @@ Public Class iuHOme
 
             Next
         Next
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
+
     End Sub
     Private Sub mtAlumnos_Click(sender As Object, e As EventArgs) Handles mtAlumnos.Click
         Dim frServicios As New iuServiciosHome

@@ -2,6 +2,9 @@
 Imports EE
 
 
+Imports System.Globalization
+Imports System.Threading
+
 Public Class iuABM
     Public Shared legajo As Integer
     Public Shared unaPersona As New Persona
@@ -29,6 +32,11 @@ Public Class iuABM
 
             Next
         Next
+
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
+
     End Sub
     Private Sub iuABM_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cambiaridioma()

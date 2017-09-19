@@ -90,6 +90,7 @@
     <Compile Include="Servicios\Bitacora\dalEventoBitacora.vb" />
     <Compile Include="Servicios\DigitoVerificadorV\dalDigitoVerificadorV.vb" />
     <Compile Include="Servicios\Idioma\dalIdioma.vb" />
+    <Compile Include="Servicios\Idioma\dalPalabra.vb" />
     <Compile Include="Servicios\Idioma\dalTraduccion.vb" />
     <Compile Include="Servicios\Login\dalUsuario.vb" />
   </ItemGroup>

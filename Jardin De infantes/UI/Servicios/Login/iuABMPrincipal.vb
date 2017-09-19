@@ -1,6 +1,10 @@
 ﻿Imports BLL
 Imports EE
 
+Imports System.Globalization
+Imports System.Threading
+
+
 Public Class iuABMPrincipal
     Private Sub iuABMPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cambiaridioma()
@@ -30,6 +34,12 @@ Public Class iuABMPrincipal
 
             Next
         Next
+
+
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
+
     End Sub
 
     Private Sub mtAlta_Click(sender As Object, e As EventArgs) Handles mtAlta.Click

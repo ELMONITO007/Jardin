@@ -1,5 +1,8 @@
 ﻿Imports BLL
 Imports EE
+
+Imports System.Globalization
+Imports System.Threading
 Public Class iuCambiarIdioma
     Sub cambiaridioma()
 
@@ -21,6 +24,9 @@ Public Class iuCambiarIdioma
 
             Next
         Next
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
     End Sub
     Private Sub MetroComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbIdioma.SelectedIndexChanged
 

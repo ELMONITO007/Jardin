@@ -1,6 +1,9 @@
 ﻿Imports BLL
 Imports EE
 Imports MetroFramework
+
+Imports System.Globalization
+Imports System.Threading
 Public Class iuBiatacora
     Private Sub btnVerTodos_Click(sender As Object, e As EventArgs) Handles btnVerTodos.Click
         Dim unaBll As New bllBitacora
@@ -77,6 +80,10 @@ Public Class iuBiatacora
             Next
         Next
 
+
+        Dim culturaObj As CultureInfo = New CultureInfo(SingletonIdioma.intance.getUsuario.getIdioma)
+        Threading.Thread.CurrentThread.CurrentUICulture = culturaObj
+        Threading.Thread.CurrentThread.CurrentCulture = culturaObj
 
 
     End Sub
