@@ -59,4 +59,9 @@ Public Class iuServiciosHome
         frm.ShowDialog()
 
     End Sub
+
+    Private Sub mtPermiso_Click(sender As Object, e As EventArgs) Handles mtPermiso.Click
+        Dim frm As New iuPermisos
+        frm.ShowDialog()
+    End Sub
 End Class

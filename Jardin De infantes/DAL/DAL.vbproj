@@ -88,6 +88,7 @@
     <Compile Include="Servicios\Backup\dalBackup.vb" />
     <Compile Include="Servicios\Bitacora\dalBitacora.vb" />
     <Compile Include="Servicios\Bitacora\dalEventoBitacora.vb" />
+    <Compile Include="Servicios\dalFamilia.vb" />
     <Compile Include="Servicios\DigitoVerificadorV\dalDigitoVerificadorV.vb" />
     <Compile Include="Servicios\Idioma\dalIdioma.vb" />
     <Compile Include="Servicios\Idioma\dalPalabra.vb" />

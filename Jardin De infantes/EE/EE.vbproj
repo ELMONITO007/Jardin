@@ -102,6 +102,9 @@
     <Compile Include="Servicios\Gestion usuario\Usuario.vb" />
     <Compile Include="Servicios\Idioma\SingletonIdioma.vb" />
     <Compile Include="Servicios\Idioma\Traduccion.vb" />
+    <Compile Include="Servicios\Permisos\Composite.vb" />
+    <Compile Include="Servicios\Permisos\Familia.vb" />
+    <Compile Include="Servicios\Permisos\Patente.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

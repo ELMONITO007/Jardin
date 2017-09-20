@@ -87,6 +87,7 @@
     <Compile Include="Servicios\Idioma\mppPalabra.vb" />
     <Compile Include="Servicios\Idioma\mppTraduccion.vb" />
     <Compile Include="Servicios\Gestion Login\mppUsuario.vb" />
+    <Compile Include="Servicios\mppFamilia.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
