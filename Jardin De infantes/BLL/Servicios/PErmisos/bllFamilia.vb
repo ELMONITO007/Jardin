@@ -55,10 +55,30 @@ insert into CompositeFamilia(ID_CompositeFamilia,ID_CompositePatente)values ((se
             Dim dal As New dalFamilia
             Dim cadena As String = "insert into CompositeFamilia(ID_CompositeFamilia,ID_CompositePatente)values ((select ID_Composite from Composite where Nombre='" & unaFamilia.getNombre & "'),(select ID_Composite from Composite where Nombre='" & unaPatente & "'))"
             dal.Escribir("insert into CompositeFamilia(ID_CompositeFamilia,ID_CompositePatente)values ((select ID_Composite from Composite where Nombre='" & unaFamilia.getNombre & "'),(select ID_Composite from Composite where Nombre='" & unaPatente & "'))")
+
             Return True
         Catch ex As Exception
             Return False
         End Try
+
+    End Function
+
+
+    Public Function agregarFamiliaUSuario(unUSuario As Usuario, unCOmponente As Composite)
+        Try
+            Dim dal As New dalFamilia
+            dal.Escribir("insert into UsuarioFamilia(ID_Permiso,ID_Usuario)values ((select  cf.ID_Permiso from CompositeFamilia as cf join Composite as c on c.ID_Composite=cf.ID_CompositeFamilia where c.nombre='" & unCOmponente.getNombre & "' and ID_CompositePatente is null
+),(select ID_Usuario from Usuario where NombreUsuario='" & unUSuario.getNombreUsuario & "'))")
+            Dim bll As New bllBitacora
+            bll.altaBitacora("AsignarPErmiso", "se asigno permisos a: " & unUSuario.getNombreUsuario)
+
+            Return True
+        Catch ex As Exception
+
+            Return False
+        End Try
+
+
 
     End Function
 End Class

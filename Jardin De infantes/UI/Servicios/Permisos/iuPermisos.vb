@@ -6,7 +6,13 @@ Public Class iuPermisos
         llenarArbol()
         llenarFamilia()
         llenarPAtente()
-
+        Dim bllrio As New bllUsuario
+        txtElUSuarioFamilia.DataSource = bllrio.obtenerListaUsuario()
+        txtElUSuarioFamilia.DisplayMember = "NombreUsuario"
+        txtElUSuarioFamilia.ValueMember = "NombreUsuario"
+        txtElusuarioRol.DataSource = bllrio.obtenerListaUsuario()
+        txtElusuarioRol.DisplayMember = "NombreUsuario"
+        txtElusuarioRol.ValueMember = "NombreUsuario"
     End Sub
     Sub llenarArbol()
         tvwPermisos.Nodes.Clear()
@@ -36,13 +42,18 @@ Public Class iuPermisos
 
         dgvAsignarFamilia.DataSource = ""
         dgvAsignarFamilia.DataSource = bllp.obtenerFamiliadt
+        dgvUSuarioFamilia.DataSource = ""
+        dgvUSuarioFamilia.DataSource = bllp.obtenerFamiliadt
     End Sub
     Sub llenarPAtente()
         Dim bll As New bllPatente
+        dgvUsuarioPatente.DataSource = ""
+        dgvUsuarioPatente.DataSource = bll.listaPatente
         dgvPAtente.DataSource = ""
         dgvPAtente.DataSource = bll.listaPatente
         dgvAsignarPAtente.DataSource = ""
         dgvAsignarPAtente.DataSource = bll.listaPatente
+
 
     End Sub
 
@@ -97,5 +108,47 @@ Public Class iuPermisos
 
         llenarArbol()
 
+    End Sub
+
+
+
+    Private Sub dgvUsuarioPatente_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvUsuarioPatente.CellContentClick
+
+
+        txtUSuarioPatente.Text = dgvAsignarPAtente.CurrentRow.Cells(0).Value.ToString
+
+    End Sub
+
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
+        Dim bll As New bllFamilia
+        Dim unUsuario As New Usuario(txtElUSuarioFamilia.Text)
+        Dim unPermiso As New Patente(txtUSuarioPatente.Text, "", 1)
+        If bll.agregarFamiliaUSuario(unUsuario, unPermiso) = True Then
+            MsgBox("Se Asigno el permiso: " & unPermiso.getNombre & " al usuario: " & unPermiso.getNombre, vbOKOnly + vbInformation, "Permisos")
+
+        Else
+            MsgBox("Error Verifique los dato", vbAbort + vbOKOnly, "Permisos")
+
+        End If
+
+    End Sub
+
+
+
+    Private Sub MetroGrid1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvUsuarioFamilia.CellContentClick
+
+        txtUsuarioFamilia.Text = dgvUsuarioFamilia.CurrentRow.Cells(0).Value.ToString
+    End Sub
+
+    Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
+        Dim bll As New bllFamilia
+        Dim unUsuario As New Usuario(txtElusuarioRol.Text)
+        Dim unaFamilia As New Familia(txtUsuarioFamilia.Text, "", 1)
+        If bll.agregarFamiliaUSuario(unUsuario, unaFamilia) = True Then
+            MsgBox("Se Asigno el permiso: " & unaFamilia.getNombre & " al usuario: " & unaFamilia.getNombre, vbOKOnly + vbInformation, "Permisos")
+
+        Else
+            MsgBox("Error Verifique los dato", vbAbort + vbOKOnly, "Permisos")
+        End If
     End Sub
 End Class
