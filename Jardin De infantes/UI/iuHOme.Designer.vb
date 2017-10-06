@@ -30,6 +30,8 @@ Partial Class iuHOme
         Me.mtAlumnos = New MetroFramework.Controls.MetroTile()
         Me.btnCerrarSesion = New System.Windows.Forms.Button()
         Me.lblUsuario = New DevComponents.DotNetBar.LabelX()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mtGestionIntitucional
@@ -176,6 +178,15 @@ Partial Class iuHOme
         Me.lblUsuario.Size = New System.Drawing.Size(129, 29)
         Me.lblUsuario.TabIndex = 20
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(432, 8)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 28
+        Me.DataGridView1.Size = New System.Drawing.Size(229, 61)
+        Me.DataGridView1.TabIndex = 21
+        '
         'iuHOme
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -184,6 +195,7 @@ Partial Class iuHOme
         Me.BackLocation = MetroFramework.Forms.BackLocation.TopRight
         Me.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle
         Me.ClientSize = New System.Drawing.Size(1007, 637)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.lblUsuario)
         Me.Controls.Add(Me.btnCerrarSesion)
         Me.Controls.Add(Me.mtGestionIntitucional)
@@ -195,6 +207,7 @@ Partial Class iuHOme
         Me.Name = "iuHOme"
         Me.Style = MetroFramework.MetroColorStyle.Orange
         Me.Theme = MetroFramework.MetroThemeStyle.[Default]
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -207,4 +220,5 @@ Partial Class iuHOme
     Friend WithEvents mtGestionIntitucional As MetroFramework.Controls.MetroTile
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents lblUsuario As DevComponents.DotNetBar.LabelX
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

@@ -53,7 +53,7 @@ Public Class dalBackup
     Public Sub EscribirsinTran(cadena As String)
         Try
 
-            Using cn As New SqlConnection(ConfigurationManager.ConnectionStrings("Notebook").ConnectionString)
+            Using cn As New SqlConnection(ConfigurationManager.ConnectionStrings("PC").ConnectionString)
                 cn.Open()
 
                 Dim cmd As New SqlCommand()

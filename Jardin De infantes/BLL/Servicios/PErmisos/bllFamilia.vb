@@ -81,4 +81,17 @@ insert into CompositeFamilia(ID_CompositeFamilia,ID_CompositePatente)values ((se
 
 
     End Function
+
+    Public Function obtenerDondePuedeEntrar() As DataTable
+        Try
+            Dim dal As New dalFamilia
+            Dim dt As New DataTable
+            Dim cadena As String = "select c.nombre from Composite as c join CompositeFamilia as cf on c.ID_Composite=cf.ID_CompositePatente join Composite as c2 on c2.ID_Composite=cf.ID_CompositeFamilia where c2.Nombre=(select c1.Nombre from UsuarioFamilia as uf join Usuario as u on uf.ID_Usuario=u.ID_Usuario join CompositeFamilia as cf on cf.ID_Permiso=uf.ID_Permiso join Composite as c1 on c1.ID_Composite=cf.ID_CompositeFamilia where NombreUsuario='" & sessionManager.intance.getUsuario.getNombreUsuario & "')"
+            dt = dal.Leer(cadena)
+            Return dt
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
 End Class

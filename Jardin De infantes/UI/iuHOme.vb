@@ -9,6 +9,9 @@ Public Class iuHOme
 
         Dim unbllTraducir As New bllTraduccion
 
+        Dim unBllFamilia As New bllFamilia
+        DataGridView1.DataSource = unBllFamilia.obtenerDondePuedeEntrar()
+
 
         Dim unTraducir As New Traduccion(SingletonIdioma.intance.getUsuario)
         Dim ht As New Hashtable
