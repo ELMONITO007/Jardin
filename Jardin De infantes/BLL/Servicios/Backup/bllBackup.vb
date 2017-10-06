@@ -52,7 +52,7 @@ Public Class bllBackup
         Try
             Dim dalALta As New dalBackup
             Dim cadena As String = "Restore database JardinInfantes from disk='" & unBackup.getPath & "\" & unBackup.getNombre & ".bak'"
-            dalALta.Escribir(cadena)
+            dalALta.EscribirsinTran(cadena)
             Dim agregarBitacora As New bllBitacora
             agregarBitacora.altaBitacora("Restaurar Backup", "Se restaura un Backup")
             MsgBox("Se restauro el Backup correctamente", MsgBoxStyle.Information, "Recuperar Backup")

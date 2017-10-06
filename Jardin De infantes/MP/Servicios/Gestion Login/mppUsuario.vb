@@ -49,8 +49,10 @@ Public Class mppUsuario
         For Each item As DataRow In dt.Rows
 
 
-            Dim empleado As New Persona(CStr(item("nombre")), CStr(item("nombre")))
+            Dim empleado As New Persona(CStr(item("nombre")), CStr(item("Apellido")))
+            empleado.setID(CInt(item("Legajo")))
             Dim unUsuario = New Usuario(CStr(item("NombreUsuario")), CStr(item("Contraseña")), Integer.Parse(item("IntentosFallidos")), Boolean.Parse(item("Logueado")), CStr(item("DigitoVerificadorH")), Boolean.Parse(item("bloqueado")), empleado, Boolean.Parse(item("habilitado")))
+            unUsuario.setID(CInt(item("ID_Usuario")))
             lista.Add(unUsuario)
         Next
         Return lista

@@ -69,10 +69,6 @@ C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.exe
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.pdb
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\UI.xml
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\BLL.dll
-C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar.Design.dll
-C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar.Layout.dll
-C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.Instrumentation.dll
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\EE.dll
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DAL.dll
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\MP.dll
@@ -109,3 +105,6 @@ C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuA
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuBackups.resources
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuABMPrincipal.resources
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuPermisos.resources
+C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\UI\obj\Debug\UI.vbproj.CoreCompileInputs.cache

@@ -53,3 +53,4 @@ C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\EE.pd
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\EE.xml
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\MP.pdb
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\BLL\bin\Debug\MP.xml
+C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache

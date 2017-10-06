@@ -26,3 +26,4 @@ C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbp
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.dll
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.xml
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.pdb
+C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbproj.CoreCompileInputs.cache

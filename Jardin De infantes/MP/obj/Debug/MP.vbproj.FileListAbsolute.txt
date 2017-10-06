@@ -35,3 +35,4 @@ C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\MP\obj\Debug\MP.vbp
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\MP\obj\Debug\MP.dll
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\MP\obj\Debug\MP.xml
 C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\MP\obj\Debug\MP.pdb
+C:\Users\benitand\Documents\GitHub\Jardin\Jardin De infantes\MP\obj\Debug\MP.vbproj.CoreCompileInputs.cache

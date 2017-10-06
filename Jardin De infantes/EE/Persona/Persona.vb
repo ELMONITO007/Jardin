@@ -1,4 +1,6 @@
 ﻿Public Class Persona
+    Inherits IDentificador
+
     Protected Property legajo As Integer
     Protected Property nombre As String
     Protected Property apellido As String
@@ -37,4 +39,6 @@
         Return legajo
 
     End Function
+
+
 End Class

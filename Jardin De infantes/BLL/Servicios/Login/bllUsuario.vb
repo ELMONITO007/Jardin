@@ -2,6 +2,8 @@
 Imports MP
 Imports DAL
 Public Class bllUsuario
+
+
     Dim usuario As New Usuario
 
 
@@ -82,27 +84,16 @@ Public Class bllUsuario
         Return usuario
 
     End Function
-    Public Function obtenerDatoDVH(unUsuario As Usuario) As String
-        Dim dal As New dalUsurio(Of Usuario)
-        Dim ht As New Hashtable
-        Dim mpp As New mppUsuario
-        Dim dt As New DataTable
 
-
-        ht = mpp.BuuscarUnUsuario(unUsuario.getNombreUsuario)
-        dt = dal.BuscarUsuario(ht, "dv_Usuario")
-        Return mpp.obtenerString(dt)
-
-    End Function
     Public Function verificarDVH(unUsuario As Usuario) As Boolean
-        Dim hash As New DigitoVerificadorH(obtenerDatoDVH(unUsuario), sessionManager.intance.getUsuario.getDVH)
+        Dim hash As New DigitoVerificadorH(unUsuario.getObtenerTodoJunto, sessionManager.intance.getUsuario.getDVH)
         Return hash.VerificadorDigitoVerificadorH
 
 
     End Function
     Public Sub ModificarDVH(unUsuario As Usuario)
         Try
-            Dim ValorAHashear As String = obtenerDatoDVH(unUsuario)
+            Dim ValorAHashear As String = unUsuario.getObtenerTodoJunto
             Dim dal As New dalUsurio(Of Usuario)
             Dim ht As New Hashtable
             Dim mpp As New mppUsuario

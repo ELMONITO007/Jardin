@@ -1,4 +1,6 @@
 ﻿Public Class Usuario
+    Inherits IDentificador
+
     Private Property nombreUsuario As String
     Private Property contraseña As String
     Private Property intentosFallido As Integer
@@ -52,7 +54,7 @@
         digitoVerificadorH = DVH
     End Sub
     Public Function getObtenerTodoJunto() As String
-        Return nombreUsuario + contraseña + intentosFallido + logueado + bloqueado
+        Return CStr(id) & nombreUsuario & contraseña & CStr(intentosFallido) & CStr(logueado) & CStr(persona.getID) & CStr(bloqueado) & CStr(habilitado)
     End Function
     Public Function getDVH() As String
         Return digitoVerificadorH
