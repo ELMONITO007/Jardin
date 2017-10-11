@@ -6,5 +6,9 @@ Public Class mppPersona
         Return cadena
     End Function
 
+    Public Function altaPersona() As String
+        Dim cadena As String
+        Return cadena
+    End Function
 
 End Class

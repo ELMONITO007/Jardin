@@ -6,7 +6,8 @@ Public Class bllPersona
     Inherits bllABM(Of Persona)
 
     Public Overrides Sub alta(unObjeto As Persona)
-        Throw New NotImplementedException()
+        Dim unaDal As New dalPersona
+
     End Sub
 
     Public Overrides Sub Baja(unObjeto As Persona)

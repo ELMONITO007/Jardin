@@ -85,6 +85,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Persona\dalPersona.vb" />
+    <Compile Include="Persona\dalTelefono.vb" />
+    <Compile Include="Persona\dalTipoPersona.vb" />
     <Compile Include="Servicios\Backup\dalBackup.vb" />
     <Compile Include="Servicios\Bitacora\dalBitacora.vb" />
     <Compile Include="Servicios\Bitacora\dalEventoBitacora.vb" />

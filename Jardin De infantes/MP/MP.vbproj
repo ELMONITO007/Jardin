@@ -80,6 +80,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Persona\mppPersona.vb" />
+    <Compile Include="Persona\mppTelefono.vb" />
+    <Compile Include="Persona\mppTipoPersona.vb" />
     <Compile Include="Servicios\Backup\mppBackup.vb" />
     <Compile Include="Servicios\Bitacora\mppBitacora.vb" />
     <Compile Include="Servicios\Bitacora\mppEventoBitacora.vb" />

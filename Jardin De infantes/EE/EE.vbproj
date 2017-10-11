@@ -81,6 +81,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Persona\Telefono.vb" />
+    <Compile Include="Persona\TelefonoAlumno.vb" />
+    <Compile Include="Persona\TipoPersona.vb" />
     <Compile Include="Servicios\BK\Backup.vb" />
     <Compile Include="Servicios\Gestion usuario\iuBuscarUsuario.Designer.vb">
       <DependentUpon>iuBuscarUsuario.vb</DependentUpon>
