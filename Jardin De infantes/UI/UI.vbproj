@@ -99,6 +99,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gestion Alumnos\abmAlumno\iuABMAlumnoHome.Designer.vb">
+      <DependentUpon>iuABMAlumnoHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Alumnos\abmAlumno\iuABMAlumnoHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Alumnos\abmAlumno\iuAltaAlumno.Designer.vb">
+      <DependentUpon>iuAltaAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Alumnos\abmAlumno\iuAltaAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Alumnos\iuAltaAlumnoFichas.Designer.vb">
+      <DependentUpon>iuAltaAlumnoFichas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Alumnos\iuAltaAlumnoFichas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Alumnos\iuGestionAlumnoHome.Designer.vb">
+      <DependentUpon>iuGestionAlumnoHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Alumnos\iuGestionAlumnoHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Persona\iuABMpersona.Designer.vb">
+      <DependentUpon>iuABMpersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Persona\iuABMpersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Persona\iuPersona.Designer.vb">
       <DependentUpon>iuPersona.vb</DependentUpon>
     </Compile>
@@ -195,6 +225,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Gestion Alumnos\abmAlumno\iuABMAlumnoHome.resx">
+      <DependentUpon>iuABMAlumnoHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Alumnos\abmAlumno\iuAltaAlumno.resx">
+      <DependentUpon>iuAltaAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Alumnos\iuAltaAlumnoFichas.resx">
+      <DependentUpon>iuAltaAlumnoFichas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Alumnos\iuGestionAlumnoHome.resx">
+      <DependentUpon>iuGestionAlumnoHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persona\iuABMpersona.resx">
+      <DependentUpon>iuABMpersona.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Persona\iuPersona.resx">
       <DependentUpon>iuPersona.vb</DependentUpon>
     </EmbeddedResource>
@@ -349,6 +394,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\update1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_alta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paso1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paso2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paso 3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

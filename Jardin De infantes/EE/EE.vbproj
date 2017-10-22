@@ -81,6 +81,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Persona\Alumno.vb" />
+    <Compile Include="Persona\buldierPersona.vb" />
+    <Compile Include="Persona\Personas.vb" />
     <Compile Include="Persona\Telefono.vb" />
     <Compile Include="Persona\TelefonoAlumno.vb" />
     <Compile Include="Persona\TipoPersona.vb" />

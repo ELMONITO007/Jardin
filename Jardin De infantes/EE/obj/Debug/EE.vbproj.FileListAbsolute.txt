@@ -37,3 +37,13 @@ C:\Users\andres\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbproj.CoreC
 C:\Users\andres\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.dll
 C:\Users\andres\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.xml
 C:\Users\andres\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbprojResolveAssemblyReference.cache
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.Resources.resources
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbproj.GenerateResource.Cache
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.vbproj.CoreCompileInputs.cache
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.xml
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\obj\Debug\EE.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\bin\Debug\EE.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\bin\Debug\EE.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\EE\bin\Debug\EE.xml

@@ -38,8 +38,9 @@ Public Class iuHOme
 
     End Sub
     Private Sub mtAlumnos_Click(sender As Object, e As EventArgs) Handles mtAlumnos.Click
-        Dim frServicios As New iuServiciosHome
-        frServicios.ShowDialog()
+        Dim frga As New iuGestionAlumnoHome
+        frga.ShowDialog()
+
     End Sub
 
 

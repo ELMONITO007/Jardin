@@ -7,6 +7,9 @@ Public Class bllPersona
 
     Public Overrides Sub alta(unObjeto As Persona)
         Dim unaDal As New dalPersona
+        Dim unaBll As New bllPersona
+
+
 
     End Sub
 

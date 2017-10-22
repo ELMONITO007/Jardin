@@ -127,8 +127,8 @@
   <data name="rsz_images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alumno.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paso1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,6 +163,9 @@
   <data name="intit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alumno.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="infra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\infra1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,8 +175,14 @@
   <data name="bitacora" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bitacora.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rsz_images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paso2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paso2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="permisos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\permisos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,16 +202,22 @@
   <data name="conf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rsz_alta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_alta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rsz_infra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_infra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="idioma1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idioma1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="System1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\System1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paso 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paso 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

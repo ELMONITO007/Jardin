@@ -3703,7 +3703,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andres\\.nuget\\packages\\": {}
+    "C:\\Users\\benitand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3711,14 +3711,14 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\andres\\Documents\\Jardin\\Jardin De infantes\\SRV\\SRV.vbproj",
+      "projectUniqueName": "C:\\Users\\benitand\\Documents\\Jardin\\Jardin De infantes\\SRV\\SRV.vbproj",
       "projectName": "SRV",
-      "projectPath": "C:\\Users\\andres\\Documents\\Jardin\\Jardin De infantes\\SRV\\SRV.vbproj",
-      "packagesPath": "C:\\Users\\andres\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andres\\Documents\\Jardin\\Jardin De infantes\\SRV\\obj\\",
+      "projectPath": "C:\\Users\\benitand\\Documents\\Jardin\\Jardin De infantes\\SRV\\SRV.vbproj",
+      "packagesPath": "C:\\Users\\benitand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\benitand\\Documents\\Jardin\\Jardin De infantes\\SRV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\benitand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

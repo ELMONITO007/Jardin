@@ -49,3 +49,16 @@ C:\Users\andres\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.vbproj.CoreC
 C:\Users\andres\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.dll
 C:\Users\andres\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.xml
 C:\Users\andres\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.vbprojResolveAssemblyReference.cache
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.Resources.resources
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.vbproj.GenerateResource.Cache
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.vbproj.CoreCompileInputs.cache
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.xml
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\obj\Debug\MP.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\bin\Debug\MP.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\bin\Debug\MP.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\bin\Debug\MP.xml
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\bin\Debug\EE.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\bin\Debug\EE.pdb
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\MP\bin\Debug\EE.xml
