@@ -43,6 +43,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\Pictures\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\Pictures\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\..\Pictures\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -81,7 +90,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Persona\bllPersona.vb" />
+    <Compile Include="Persona\bllpersonas.vb" />
     <Compile Include="Persona\blltipoPersona.vb" />
+    <Compile Include="Persona\CrearPersona.vb" />
     <Compile Include="Servicios\Backup\bllBackup.vb" />
     <Compile Include="Servicios\Bitacora\bllBitacora.vb" />
     <Compile Include="Servicios\Bitacora\bllEventoBitacora.vb" />

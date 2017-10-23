@@ -47,13 +47,13 @@ Partial Class iuAltaAlumno
         'lblUsuario
         '
         Me.lblUsuario.AutoSize = True
-        Me.lblUsuario.Location = New System.Drawing.Point(335, 244)
+        Me.lblUsuario.Location = New System.Drawing.Point(309, 244)
         Me.lblUsuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblUsuario.Name = "lblUsuario"
-        Me.lblUsuario.Size = New System.Drawing.Size(80, 19)
+        Me.lblUsuario.Size = New System.Drawing.Size(111, 19)
         Me.lblUsuario.TabIndex = 35
-        Me.lblUsuario.Tag = "Nombre de usuario"
-        Me.lblUsuario.Text = "Alta Usuario"
+        Me.lblUsuario.Tag = "Asignar Familiares"
+        Me.lblUsuario.Text = "AsignarFamiliares"
         '
         'lblAltaPersona
         '

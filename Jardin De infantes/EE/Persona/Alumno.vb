@@ -27,7 +27,7 @@
         dni = _dni
         direccion = _direccion
         digitoVerificadorH = _digitoVerificadorH
-
+        unTIpoPersona = unTipo
     End Sub
 
 

@@ -53,9 +53,14 @@
     End Function
 
     Public Function obtenerTodo() As String
-        Return id & nombre & apellido & direccion & dni & unTipoDePersona.getID
+        Return id & nombre & apellido & direccion & dni & unTipoDePersona.obtenerID
     End Function
-
+    Public Function getID() As Integer
+        Return Me.id
+    End Function
+    Public Sub setID(_id As Integer)
+        Me.id = _id
+    End Sub
 
 
 

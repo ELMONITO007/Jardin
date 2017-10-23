@@ -65,6 +65,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestionAlumnos\Fichas\FichaAlergias.vb" />
+    <Compile Include="GestionAlumnos\Fichas\FichaCasa.vb" />
+    <Compile Include="GestionAlumnos\Fichas\FichaEnfermedades.vb" />
+    <Compile Include="GestionAlumnos\Fichas\FichaFamilia.vb" />
+    <Compile Include="GestionAlumnos\Fichas\FichaObraSocial.vb" />
     <Compile Include="IDentificador.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

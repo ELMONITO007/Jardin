@@ -4,7 +4,7 @@ Imports EE
 
 
 Public Class iuABMpersona
-    Public Shared tipoPersona As String
+    Public tipoPersona As String
     Sub cambiaridioma()
 
         Dim unbllTraducir As New bllTraduccion
@@ -38,6 +38,11 @@ Public Class iuABMpersona
     End Sub
 
     Private Sub btnAlta_Click(sender As Object, e As EventArgs) Handles btnAlta.Click
+        Dim builder As New CrearPersona
 
+        If tipoPersona = "Alumno" Then
+            builder.crearALumno(CInt(txtDNI.Text), txtApellido.Text, txtNombre.Text, txtDireccion.Text)
+
+        End If
     End Sub
 End Class

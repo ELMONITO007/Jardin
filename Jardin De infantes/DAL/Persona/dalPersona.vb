@@ -41,7 +41,7 @@ Public Class dalPersona
 
             Dim cmd As SqlCommand = db.CrearComando
 
-            cmd.CommandType = CommandType.StoredProcedure
+            cmd.CommandType = CommandType.Text
             cmd.CommandText = cadena
 
             cmd.ExecuteNonQuery()

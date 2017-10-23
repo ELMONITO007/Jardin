@@ -5,7 +5,7 @@ Imports System.Threading
 Public Class iuPersona
 
     Private Sub btnVerTodo_Click(sender As Object, e As EventArgs) Handles btnVerTodo.Click
-        Dim bll As New bllPersona
+        Dim bll As New bllpersonas
         dgvTodosLosusuario.DataSource = ""
         dgvTodosLosusuario.DataSource = bll.Listar
 

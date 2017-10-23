@@ -68,4 +68,10 @@
     Public Function getHabilitado() As Boolean
         Return habilitado
     End Function
+    Public Function getID() As Integer
+        Return Me.id
+    End Function
+    Public Sub setID(_id As Integer)
+        Me.id = _id
+    End Sub
 End Class

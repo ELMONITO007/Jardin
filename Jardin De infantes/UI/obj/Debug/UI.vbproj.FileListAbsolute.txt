@@ -191,3 +191,4 @@ C:\Users\benitand\Documents\Jardin\Jardin De infantes\UI\obj\Debug\UI.xml
 C:\Users\benitand\Documents\Jardin\Jardin De infantes\UI\obj\Debug\UI.pdb
 C:\Users\benitand\Documents\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuABMAlumnoHome.resources
 C:\Users\benitand\Documents\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuAltaAlumno.resources
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\UI\obj\Debug\UI.iuAltaAlumnoFichas.resources

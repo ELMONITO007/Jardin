@@ -5,29 +5,30 @@ Imports MP
 Public Class bllPersona
     Inherits bllABM(Of Persona)
 
-    Public Overrides Sub alta(unObjeto As Persona)
+    Public Overrides Function alta(unObjeto As Persona) As Boolean
         Dim unaDal As New dalPersona
         Dim unaBll As New bllPersona
 
 
 
-    End Sub
+    End Function
 
-    Public Overrides Sub Baja(unObjeto As Persona)
-        Throw New NotImplementedException()
-    End Sub
 
-    Public Overrides Sub Modificar(unObjeto As Persona)
+
+    Public Overrides Function Listar() As DataTable
+
+    End Function
+
+    Public Overrides Function Baja(unObjeto As Persona) As Boolean
         Throw New NotImplementedException()
-    End Sub
+    End Function
+
+    Public Overrides Function Modificar(unObjeto As Persona) As Boolean
+        Throw New NotImplementedException()
+    End Function
 
     Public Overrides Function Obtener(unObjeto As Persona) As DataTable
         Throw New NotImplementedException()
     End Function
 
-    Public Overrides Function Listar() As DataTable
-        Dim dal As New dalPersona
-        Dim mpp As New mppPersona
-        Return dal.leer(mpp.listar)
-    End Function
 End Class

@@ -92,3 +92,6 @@ C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\EE.pdb
 C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\EE.xml
 C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\MP.pdb
 C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\MP.xml
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\MetroFramework.Design.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\MetroFramework.dll
+C:\Users\benitand\Documents\Jardin\Jardin De infantes\BLL\bin\Debug\MetroFramework.Fonts.dll
