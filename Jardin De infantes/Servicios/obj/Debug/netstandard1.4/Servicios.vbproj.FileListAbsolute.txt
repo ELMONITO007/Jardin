@@ -1,8 +1,0 @@
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\bin\Debug\netstandard1.4\Servicios.deps.json
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\bin\Debug\netstandard1.4\Servicios.dll
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\bin\Debug\netstandard1.4\Servicios.pdb
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\obj\Debug\netstandard1.4\Servicios.vbprojResolveAssemblyReference.cache
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\obj\Debug\netstandard1.4\Servicios.vbproj.CoreCompileInputs.cache
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\obj\Debug\netstandard1.4\Servicios.AssemblyInfo.vb
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\obj\Debug\netstandard1.4\Servicios.dll
-C:\Users\andres\Documents\GitHub\Jardin\Jardin De infantes\Servicios\obj\Debug\netstandard1.4\Servicios.pdb

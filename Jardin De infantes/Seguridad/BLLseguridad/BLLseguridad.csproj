@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52F2EA1B-1592-4F68-B345-94EE35186C19}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLLseguridad</RootNamespace>
+    <AssemblyName>BLLseguridad</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backup\bllBackup.cs" />
+    <Compile Include="Bitacora\bllBitacora.cs" />
+    <Compile Include="Bitacora\bllEvento.cs" />
+    <Compile Include="bllSeguridad.cs" />
+    <Compile Include="DVV\bllDVV.cs" />
+    <Compile Include="Idioma\bllIdioma.cs" />
+    <Compile Include="Idioma\bllPalabras.cs" />
+    <Compile Include="Idioma\bllTraduccion.cs" />
+    <Compile Include="Login\bllLogin.cs" />
+    <Compile Include="Login\bllUsuario.cs" />
+    <Compile Include="Permisos\bllFamilia.cs" />
+    <Compile Include="Permisos\bllModulo.cs" />
+    <Compile Include="Permisos\bllModuloCOmposite.cs" />
+    <Compile Include="Permisos\bllPatente.cs" />
+    <Compile Include="Permisos\bllRolesUsuarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALseguridad\DALseguridad.csproj">
+      <Project>{68fa8180-df74-4a5a-b1d2-13dc28976e44}</Project>
+      <Name>DALseguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EEseguridad\EEseguridad.csproj">
+      <Project>{a9808599-6a0d-4a47-96a5-df173f946f99}</Project>
+      <Name>EEseguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MPPSeguridad\MPPSeguridad.csproj">
+      <Project>{75ca9c02-f714-4413-b50b-cd91f65a5880}</Project>
+      <Name>MPPSeguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REGEX\REGEX.csproj">
+      <Project>{bc00713e-549d-40ec-97dd-56dac04c6cb9}</Project>
+      <Name>REGEX</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
